@@ -1,0 +1,589 @@
+{
+  "batchIndex": 3,
+  "totalBatches": 8,
+  "files": [
+    {
+      "path": "app/journal/page.tsx",
+      "language": "typescript",
+      "sizeLines": 167,
+      "fileCategory": "code"
+    },
+    {
+      "path": "app/page.tsx",
+      "language": "typescript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/statistics/today-strip.tsx",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/timer/custom-timer-dialog.tsx",
+      "language": "typescript",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/timer/focus-mode.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/timer/timer-panel.tsx",
+      "language": "typescript",
+      "sizeLines": 136,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/use-cat-mood.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/use-now.ts",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "hooks/use-stats.ts",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/quotes.ts",
+      "language": "typescript",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/stores/preferences.ts",
+      "language": "typescript",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/stores/ui.ts",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/timer/timer.ts",
+      "language": "typescript",
+      "sizeLines": 190,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "app/journal/page.tsx": [
+      "components/statistics/weekly-chart.tsx",
+      "components/ui/controls.tsx",
+      "hooks/use-stats.ts",
+      "lib/stores/notes.ts",
+      "lib/stores/preferences.ts",
+      "lib/stores/ui.ts",
+      "lib/utils.ts"
+    ],
+    "app/page.tsx": [
+      "components/scene/room-stage.tsx",
+      "components/statistics/today-strip.tsx",
+      "components/timer/focus-mode.tsx",
+      "components/timer/timer-panel.tsx",
+      "hooks/use-cat-mood.ts",
+      "hooks/use-now.ts",
+      "lib/quotes.ts",
+      "lib/stores/preferences.ts",
+      "lib/stores/ui.ts",
+      "lib/timer/timer.ts"
+    ],
+    "components/statistics/today-strip.tsx": [
+      "hooks/use-stats.ts",
+      "lib/stores/preferences.ts",
+      "lib/stores/ui.ts",
+      "lib/utils.ts"
+    ],
+    "components/timer/custom-timer-dialog.tsx": [
+      "components/ui/button.tsx",
+      "components/ui/controls.tsx",
+      "components/ui/dialog.tsx",
+      "lib/stores/preferences.ts",
+      "lib/timer/timer.ts",
+      "lib/utils.ts"
+    ],
+    "components/timer/focus-mode.tsx": [
+      "components/scene/room-stage.tsx",
+      "components/ui/button.tsx",
+      "hooks/use-cat-mood.ts",
+      "hooks/use-now.ts",
+      "lib/audio/music.ts",
+      "lib/stores/music.ts",
+      "lib/stores/ui.ts",
+      "lib/timer/timer.ts",
+      "lib/utils.ts"
+    ],
+    "components/timer/timer-panel.tsx": [
+      "components/timer/custom-timer-dialog.tsx",
+      "components/timer/timer-ring.tsx",
+      "components/ui/button.tsx",
+      "components/ui/controls.tsx",
+      "hooks/use-now.ts",
+      "lib/stores/preferences.ts",
+      "lib/stores/ui.ts",
+      "lib/timer/timer.ts",
+      "lib/utils.ts",
+      "types/index.ts"
+    ],
+    "hooks/use-cat-mood.ts": [
+      "hooks/use-now.ts",
+      "lib/stores/ui.ts",
+      "types/index.ts"
+    ],
+    "hooks/use-now.ts": [],
+    "hooks/use-stats.ts": [
+      "hooks/use-now.ts",
+      "lib/stats.ts",
+      "lib/stores/stats.ts",
+      "lib/utils.ts"
+    ],
+    "lib/quotes.ts": [],
+    "lib/stores/preferences.ts": [
+      "types/index.ts"
+    ],
+    "lib/stores/ui.ts": [
+      "types/index.ts"
+    ],
+    "lib/timer/timer.ts": [
+      "lib/stores/preferences.ts",
+      "lib/stores/stats.ts",
+      "types/index.ts"
+    ]
+  },
+  "neighborMap": {
+    "app/journal/page.tsx": [
+      {
+        "path": "components/statistics/weekly-chart.tsx",
+        "batchIndex": 4,
+        "symbols": [
+          "WeeklyChart"
+        ]
+      },
+      {
+        "path": "components/ui/controls.tsx",
+        "batchIndex": 4,
+        "symbols": [
+          "Slider",
+          "Switch",
+          "Segmented",
+          "Field",
+          "Stepper"
+        ]
+      },
+      {
+        "path": "lib/stores/notes.ts",
+        "batchIndex": 1,
+        "symbols": [
+          "NOTES_MAX",
+          "useNotesStore"
+        ]
+      },
+      {
+        "path": "lib/utils.ts",
+        "batchIndex": 4,
+        "symbols": [
+          "cn",
+          "clamp",
+          "formatClock",
+          "formatDuration",
+          "uuid",
+          "dayKey",
+          "timeAgo",
+          "initials"
+        ]
+      }
+    ],
+    "app/page.tsx": [
+      {
+        "path": "components/scene/room-stage.tsx",
+        "batchIndex": 5,
+        "symbols": [
+          "RoomStage"
+        ]
+      }
+    ],
+    "components/statistics/today-strip.tsx": [
+      {
+        "path": "lib/utils.ts",
+        "batchIndex": 4,
+        "symbols": [
+          "cn",
+          "clamp",
+          "formatClock",
+          "formatDuration",
+          "uuid",
+          "dayKey",
+          "timeAgo",
+          "initials"
+        ]
+      }
+    ],
+    "components/timer/custom-timer-dialog.tsx": [
+      {
+        "path": "components/ui/button.tsx",
+        "batchIndex": 2,
+        "symbols": [
+          "Button",
+          "IconButton"
+        ]
+      },
+      {
+        "path": "components/ui/controls.tsx",
+        "batchIndex": 4,
+        "symbols": [
+          "Slider",
+          "Switch",
+          "Segmented",
+          "Field",
+          "Stepper"
+        ]
+      },
+      {
+        "path": "components/ui/dialog.tsx",
+        "batchIndex": 2,
+        "symbols": [
+          "Dialog"
+        ]
+      },
+      {
+        "path": "lib/utils.ts",
+        "batchIndex": 4,
+        "symbols": [
+          "cn",
+          "clamp",
+          "formatClock",
+          "formatDuration",
+          "uuid",
+          "dayKey",
+          "timeAgo",
+          "initials"
+        ]
+      }
+    ],
+    "components/timer/focus-mode.tsx": [
+      {
+        "path": "components/scene/room-stage.tsx",
+        "batchIndex": 5,
+        "symbols": [
+          "RoomStage"
+        ]
+      },
+      {
+        "path": "components/ui/button.tsx",
+        "batchIndex": 2,
+        "symbols": [
+          "Button",
+          "IconButton"
+        ]
+      },
+      {
+        "path": "lib/audio/music.ts",
+        "batchIndex": 1,
+        "symbols": [
+          "musicPlayer",
+          "trackDurationSeconds"
+        ]
+      },
+      {
+        "path": "lib/stores/music.ts",
+        "batchIndex": 1,
+        "symbols": [
+          "useMusicStore"
+        ]
+      },
+      {
+        "path": "lib/utils.ts",
+        "batchIndex": 4,
+        "symbols": [
+          "cn",
+          "clamp",
+          "formatClock",
+          "formatDuration",
+          "uuid",
+          "dayKey",
+          "timeAgo",
+          "initials"
+        ]
+      }
+    ],
+    "components/timer/timer-panel.tsx": [
+      {
+        "path": "components/timer/timer-ring.tsx",
+        "batchIndex": 4,
+        "symbols": [
+          "TimerRing"
+        ]
+      },
+      {
+        "path": "components/ui/button.tsx",
+        "batchIndex": 2,
+        "symbols": [
+          "Button",
+          "IconButton"
+        ]
+      },
+      {
+        "path": "components/ui/controls.tsx",
+        "batchIndex": 4,
+        "symbols": [
+          "Slider",
+          "Switch",
+          "Segmented",
+          "Field",
+          "Stepper"
+        ]
+      },
+      {
+        "path": "lib/utils.ts",
+        "batchIndex": 4,
+        "symbols": [
+          "cn",
+          "clamp",
+          "formatClock",
+          "formatDuration",
+          "uuid",
+          "dayKey",
+          "timeAgo",
+          "initials"
+        ]
+      },
+      {
+        "path": "types/index.ts",
+        "batchIndex": 1,
+        "symbols": [
+          "DEFAULT_PREFERENCES"
+        ]
+      }
+    ],
+    "hooks/use-cat-mood.ts": [
+      {
+        "path": "types/index.ts",
+        "batchIndex": 1,
+        "symbols": [
+          "DEFAULT_PREFERENCES"
+        ]
+      },
+      {
+        "path": "components/scene/room-stage.tsx",
+        "batchIndex": 5,
+        "symbols": [
+          "RoomStage"
+        ]
+      },
+      {
+        "path": "components/study-room/room-view.tsx",
+        "batchIndex": 2,
+        "symbols": [
+          "RoomView"
+        ]
+      }
+    ],
+    "hooks/use-now.ts": [
+      {
+        "path": "components/scene/study-scene.tsx",
+        "batchIndex": 1,
+        "symbols": [
+          "StudyScene"
+        ]
+      },
+      {
+        "path": "components/study-room/room-view.tsx",
+        "batchIndex": 2,
+        "symbols": [
+          "RoomView"
+        ]
+      }
+    ],
+    "hooks/use-stats.ts": [
+      {
+        "path": "lib/stats.ts",
+        "batchIndex": 4,
+        "symbols": [
+          "summarize"
+        ]
+      },
+      {
+        "path": "lib/stores/stats.ts",
+        "batchIndex": 1,
+        "symbols": [
+          "useStatsStore"
+        ]
+      },
+      {
+        "path": "lib/utils.ts",
+        "batchIndex": 4,
+        "symbols": [
+          "cn",
+          "clamp",
+          "formatClock",
+          "formatDuration",
+          "uuid",
+          "dayKey",
+          "timeAgo",
+          "initials"
+        ]
+      }
+    ],
+    "lib/stores/preferences.ts": [
+      {
+        "path": "types/index.ts",
+        "batchIndex": 1,
+        "symbols": [
+          "DEFAULT_PREFERENCES"
+        ]
+      },
+      {
+        "path": "app/settings/page.tsx",
+        "batchIndex": 2,
+        "symbols": [
+          "SettingsPage"
+        ]
+      },
+      {
+        "path": "components/layout/providers.tsx",
+        "batchIndex": 1,
+        "symbols": [
+          "Providers"
+        ]
+      },
+      {
+        "path": "components/scene/room-stage.tsx",
+        "batchIndex": 5,
+        "symbols": [
+          "RoomStage"
+        ]
+      },
+      {
+        "path": "hooks/use-study-room.ts",
+        "batchIndex": 2,
+        "symbols": [
+          "roomRemaining",
+          "useStudyRoom"
+        ]
+      },
+      {
+        "path": "lib/supabase/sync.ts",
+        "batchIndex": 1,
+        "symbols": [
+          "startSync"
+        ]
+      }
+    ],
+    "lib/stores/ui.ts": [
+      {
+        "path": "types/index.ts",
+        "batchIndex": 1,
+        "symbols": [
+          "DEFAULT_PREFERENCES"
+        ]
+      },
+      {
+        "path": "app/settings/page.tsx",
+        "batchIndex": 2,
+        "symbols": [
+          "SettingsPage"
+        ]
+      },
+      {
+        "path": "components/ambience/mixer-sheet.tsx",
+        "batchIndex": 4,
+        "symbols": [
+          "SOUNDS",
+          "toggleSound",
+          "setSoundLevel",
+          "applyMix",
+          "MixerPanel",
+          "MixerSheet"
+        ]
+      },
+      {
+        "path": "components/layout/providers.tsx",
+        "batchIndex": 1,
+        "symbols": [
+          "Providers"
+        ]
+      },
+      {
+        "path": "components/layout/top-nav.tsx",
+        "batchIndex": 4,
+        "symbols": [
+          "TopNav"
+        ]
+      },
+      {
+        "path": "components/music/player-dock.tsx",
+        "batchIndex": 1,
+        "symbols": [
+          "PlayerDock"
+        ]
+      },
+      {
+        "path": "components/scene/room-stage.tsx",
+        "batchIndex": 5,
+        "symbols": [
+          "RoomStage"
+        ]
+      },
+      {
+        "path": "components/scene/study-scene.tsx",
+        "batchIndex": 1,
+        "symbols": [
+          "StudyScene"
+        ]
+      },
+      {
+        "path": "hooks/use-study-room.ts",
+        "batchIndex": 2,
+        "symbols": [
+          "roomRemaining",
+          "useStudyRoom"
+        ]
+      }
+    ],
+    "lib/timer/timer.ts": [
+      {
+        "path": "lib/stores/stats.ts",
+        "batchIndex": 1,
+        "symbols": [
+          "useStatsStore"
+        ]
+      },
+      {
+        "path": "types/index.ts",
+        "batchIndex": 1,
+        "symbols": [
+          "DEFAULT_PREFERENCES"
+        ]
+      },
+      {
+        "path": "components/layout/providers.tsx",
+        "batchIndex": 1,
+        "symbols": [
+          "Providers"
+        ]
+      },
+      {
+        "path": "components/study-room/room-view.tsx",
+        "batchIndex": 2,
+        "symbols": [
+          "RoomView"
+        ]
+      }
+    ]
+  }
+}

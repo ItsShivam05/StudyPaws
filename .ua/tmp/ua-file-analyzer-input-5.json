@@ -1,0 +1,121 @@
+{
+  "projectRoot": "C:\\Users\\Satyam Thakur\\shivammmm\\Projects\\study-chill-sessions",
+  "batchFiles": [
+    {
+      "path": "components/layout/account-menu.tsx",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/pet/cat-avatar.tsx",
+      "language": "typescript",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/pet/cat-parts.tsx",
+      "language": "typescript",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/pet/cat.tsx",
+      "language": "typescript",
+      "sizeLines": 259,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/pet/curled-cat.tsx",
+      "language": "typescript",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/pet/mini-cat.tsx",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/scene/room-stage.tsx",
+      "language": "typescript",
+      "sizeLines": 254,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/scene/student.tsx",
+      "language": "typescript",
+      "sizeLines": 294,
+      "fileCategory": "code"
+    },
+    {
+      "path": "components/study-room/participants.tsx",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "lib/avatars.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "components/layout/account-menu.tsx": [
+      "components/pet/cat-avatar.tsx",
+      "lib/supabase/auth.ts"
+    ],
+    "components/pet/cat-avatar.tsx": [
+      "components/pet/cat-parts.tsx",
+      "lib/avatars.ts",
+      "lib/utils.ts",
+      "types/index.ts"
+    ],
+    "components/pet/cat-parts.tsx": [
+      "lib/avatars.ts"
+    ],
+    "components/pet/cat.tsx": [
+      "components/pet/cat-parts.tsx",
+      "lib/avatars.ts",
+      "lib/utils.ts",
+      "types/index.ts"
+    ],
+    "components/pet/curled-cat.tsx": [
+      "lib/avatars.ts",
+      "lib/utils.ts"
+    ],
+    "components/pet/mini-cat.tsx": [
+      "components/pet/cat-parts.tsx",
+      "lib/avatars.ts",
+      "types/index.ts"
+    ],
+    "components/scene/room-stage.tsx": [
+      "components/pet/cat.tsx",
+      "components/pet/curled-cat.tsx",
+      "components/pet/mini-cat.tsx",
+      "components/scene/student.tsx",
+      "components/scene/study-scene.tsx",
+      "hooks/use-cat-mood.ts",
+      "lib/audio/chime.ts",
+      "lib/avatars.ts",
+      "lib/stores/ambience.ts",
+      "lib/stores/preferences.ts",
+      "lib/stores/ui.ts",
+      "lib/utils.ts",
+      "types/index.ts"
+    ],
+    "components/scene/student.tsx": [
+      "lib/utils.ts"
+    ],
+    "components/study-room/participants.tsx": [
+      "components/pet/cat-avatar.tsx",
+      "lib/utils.ts",
+      "types/index.ts"
+    ],
+    "lib/avatars.ts": [
+      "types/index.ts"
+    ]
+  }
+}

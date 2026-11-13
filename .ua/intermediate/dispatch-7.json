@@ -1,0 +1,44 @@
+{
+  "batchIndex": 7,
+  "totalBatches": 8,
+  "files": [
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 125,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tsconfig.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    ".env.example": [],
+    "AGENTS.md": [],
+    "README.md": [],
+    "package.json": [],
+    "tsconfig.json": []
+  },
+  "neighborMap": {}
+}

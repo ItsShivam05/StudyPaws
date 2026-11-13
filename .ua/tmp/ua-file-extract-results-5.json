@@ -1,0 +1,964 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 10,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 10,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 10,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "components/layout/account-menu.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "AccountMenu",
+          "startLine": 11,
+          "endLine": 30,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AccountMenu",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AccountMenu",
+          "callee": "useAuthStore",
+          "lineNumber": 12
+        },
+        {
+          "caller": "AccountMenu",
+          "callee": "useAuthStore",
+          "lineNumber": 13
+        },
+        {
+          "caller": "AccountMenu",
+          "callee": "useAuthStore",
+          "lineNumber": 14
+        },
+        {
+          "caller": "AccountMenu",
+          "callee": "myAvatar",
+          "lineNumber": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/pet/cat-avatar.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "CatAvatar",
+          "startLine": 7,
+          "endLine": 35,
+          "params": [
+            "{\n  avatar,\n  className,\n  sleepy,\n  ring,\n  title,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CatAvatar",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CatAvatar",
+          "callee": "cn",
+          "lineNumber": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/pet/cat-parts.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 120,
+      "nonEmptyLines": 111,
+      "functions": [
+        {
+          "name": "CatHead",
+          "startLine": 8,
+          "endLine": 120,
+          "params": [
+            "{\n  coat,\n  eyes,\n  blush = 0.25,\n  mouthOpen = false,\n  pupilX = 0,\n  blinkScale = 1,\n  earTwitch = 0,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CatHead",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/pet/cat.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 259,
+      "nonEmptyLines": 241,
+      "functions": [
+        {
+          "name": "Cat",
+          "startLine": 24,
+          "endLine": 259,
+          "params": [
+            "{ mood, coat, name, onPet, className }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Cat",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Cat",
+          "callee": "useReducedMotion",
+          "lineNumber": 25
+        },
+        {
+          "caller": "Cat",
+          "callee": "useState",
+          "lineNumber": 26
+        },
+        {
+          "caller": "Cat",
+          "callee": "useState",
+          "lineNumber": 27
+        },
+        {
+          "caller": "Cat",
+          "callee": "useState",
+          "lineNumber": 28
+        },
+        {
+          "caller": "Cat",
+          "callee": "useEffect",
+          "lineNumber": 31
+        },
+        {
+          "caller": "loop",
+          "callee": "setTimeout",
+          "lineNumber": 36
+        },
+        {
+          "caller": "loop",
+          "callee": "setBlink",
+          "lineNumber": 38
+        },
+        {
+          "caller": "loop",
+          "callee": "setTimeout",
+          "lineNumber": 39
+        },
+        {
+          "caller": "loop",
+          "callee": "setBlink",
+          "lineNumber": 39
+        },
+        {
+          "caller": "loop",
+          "callee": "Math.random",
+          "lineNumber": 40
+        },
+        {
+          "caller": "loop",
+          "callee": "setTwitch",
+          "lineNumber": 41
+        },
+        {
+          "caller": "loop",
+          "callee": "setTimeout",
+          "lineNumber": 42
+        },
+        {
+          "caller": "loop",
+          "callee": "setTwitch",
+          "lineNumber": 42
+        },
+        {
+          "caller": "loop",
+          "callee": "loop",
+          "lineNumber": 44
+        },
+        {
+          "caller": "loop",
+          "callee": "Math.random",
+          "lineNumber": 45
+        },
+        {
+          "caller": "Cat",
+          "callee": "loop",
+          "lineNumber": 47
+        },
+        {
+          "caller": "Cat",
+          "callee": "clearTimeout",
+          "lineNumber": 50
+        },
+        {
+          "caller": "Cat",
+          "callee": "useEffect",
+          "lineNumber": 55
+        },
+        {
+          "caller": "Cat",
+          "callee": "setInterval",
+          "lineNumber": 58
+        },
+        {
+          "caller": "Cat",
+          "callee": "setPupil",
+          "lineNumber": 60
+        },
+        {
+          "caller": "Cat",
+          "callee": "clearInterval",
+          "lineNumber": 62
+        },
+        {
+          "caller": "Cat",
+          "callee": "cn",
+          "lineNumber": 101
+        },
+        {
+          "caller": "Cat",
+          "callee": "[0, 1, 2].map",
+          "lineNumber": 212
+        },
+        {
+          "caller": "Cat",
+          "callee": "[\r\n                  [36, 70, \"#E8B04B\"],\r\n                  [186, 64, \"#A3B18A\"],\r\n                  [24, 130, \"#EE9C93\"],\r\n                  [200, 116, \"#E8B04B\"],\r\n                  [60, 30, \"#A3B18A\"],\r\n                  [170, 24, \"#EE9C93\"],\r\n                ].map",
+          "lineNumber": 235
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/pet/curled-cat.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 88,
+      "nonEmptyLines": 85,
+      "functions": [
+        {
+          "name": "CurledCat",
+          "startLine": 10,
+          "endLine": 88,
+          "params": [
+            "{\n  coat,\n  name,\n  onPet,\n  still = false,\n  className,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CurledCat",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "CurledCat",
+          "callee": "useReducedMotion",
+          "lineNumber": 23
+        },
+        {
+          "caller": "CurledCat",
+          "callee": "cn",
+          "lineNumber": 31
+        },
+        {
+          "caller": "CurledCat",
+          "callee": "[0, 1, 2].map",
+          "lineNumber": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/pet/mini-cat.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 18,
+      "functions": [
+        {
+          "name": "MiniCat",
+          "startLine": 6,
+          "endLine": 19,
+          "params": [
+            "{ avatar, sleepy, className }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "MiniCat",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/scene/room-stage.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 254,
+      "nonEmptyLines": 234,
+      "functions": [
+        {
+          "name": "pick",
+          "startLine": 41,
+          "endLine": 43,
+          "params": [
+            "list"
+          ]
+        },
+        {
+          "name": "RoomStage",
+          "startLine": 45,
+          "endLine": 229,
+          "params": [
+            "{\r\n  mood,\r\n  activity: activityProp,\r\n  scene,\r\n  friends,\r\n  className,\r\n  children,\r\n  rounded = true,\r\n}"
+          ]
+        },
+        {
+          "name": "Confetti",
+          "startLine": 233,
+          "endLine": 254,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoomStage",
+          "line": 45,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "pick",
+          "callee": "Math.floor",
+          "lineNumber": 42
+        },
+        {
+          "caller": "pick",
+          "callee": "Math.random",
+          "lineNumber": 42
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "usePreferences",
+          "lineNumber": 63
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useAmbienceStore",
+          "lineNumber": 64
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useUiStore",
+          "lineNumber": 65
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useUiStore",
+          "lineNumber": 66
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useReducedMotion",
+          "lineNumber": 67
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useState",
+          "lineNumber": 68
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useState",
+          "lineNumber": 69
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useState",
+          "lineNumber": 70
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useRef",
+          "lineNumber": 86
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useRef",
+          "lineNumber": 87
+        },
+        {
+          "caller": "say",
+          "callee": "setBubble",
+          "lineNumber": 90
+        },
+        {
+          "caller": "say",
+          "callee": "Date.now",
+          "lineNumber": 90
+        },
+        {
+          "caller": "say",
+          "callee": "clearTimeout",
+          "lineNumber": 91
+        },
+        {
+          "caller": "say",
+          "callee": "setTimeout",
+          "lineNumber": 92
+        },
+        {
+          "caller": "say",
+          "callee": "setBubble",
+          "lineNumber": 92
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useEffect",
+          "lineNumber": 96
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "setTimeout",
+          "lineNumber": 100
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "say",
+          "lineNumber": 100
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "pick",
+          "lineNumber": 100
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "clearTimeout",
+          "lineNumber": 101
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useRef",
+          "lineNumber": 105
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useEffect",
+          "lineNumber": 106
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "setTimeout",
+          "lineNumber": 108
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "setConfetti",
+          "lineNumber": 108
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "setTimeout",
+          "lineNumber": 109
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "setConfetti",
+          "lineNumber": 109
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "clearTimeout",
+          "lineNumber": 111
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "clearTimeout",
+          "lineNumber": 112
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "useEffect",
+          "lineNumber": 116
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "clearTimeout",
+          "lineNumber": 117
+        },
+        {
+          "caller": "pet",
+          "callee": "flashMood",
+          "lineNumber": 121
+        },
+        {
+          "caller": "pet",
+          "callee": "useUiStore.getState().touch",
+          "lineNumber": 122
+        },
+        {
+          "caller": "pet",
+          "callee": "useUiStore.getState",
+          "lineNumber": 122
+        },
+        {
+          "caller": "pet",
+          "callee": "Date.now",
+          "lineNumber": 123
+        },
+        {
+          "caller": "pet",
+          "callee": "setHearts",
+          "lineNumber": 124
+        },
+        {
+          "caller": "pet",
+          "callee": "h.slice",
+          "lineNumber": 124
+        },
+        {
+          "caller": "pet",
+          "callee": "setTimeout",
+          "lineNumber": 125
+        },
+        {
+          "caller": "pet",
+          "callee": "setHearts",
+          "lineNumber": 125
+        },
+        {
+          "caller": "pet",
+          "callee": "h.filter",
+          "lineNumber": 125
+        },
+        {
+          "caller": "pet",
+          "callee": "playPurr",
+          "lineNumber": 126
+        },
+        {
+          "caller": "pet",
+          "callee": "say",
+          "lineNumber": 127
+        },
+        {
+          "caller": "pet",
+          "callee": "pick",
+          "lineNumber": 127
+        },
+        {
+          "caller": "pet",
+          "callee": "pick",
+          "lineNumber": 127
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "cn",
+          "lineNumber": 136
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "friends.slice(0, SILL_SLOTS.length).map",
+          "lineNumber": 142
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "friends.slice",
+          "lineNumber": 142
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "f.name.split",
+          "lineNumber": 154
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "cn",
+          "lineNumber": 176
+        },
+        {
+          "caller": "RoomStage",
+          "callee": "hearts.map",
+          "lineNumber": 188
+        },
+        {
+          "caller": "Confetti",
+          "callee": "Array.from",
+          "lineNumber": 234
+        },
+        {
+          "caller": "Confetti",
+          "callee": "pieces.map",
+          "lineNumber": 237
+        }
+      ],
+      "metrics": {
+        "importCount": 13,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/scene/student.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 294,
+      "nonEmptyLines": 276,
+      "functions": [
+        {
+          "name": "pivot",
+          "startLine": 42,
+          "endLine": 44,
+          "params": [
+            "x",
+            "y"
+          ]
+        },
+        {
+          "name": "loop",
+          "startLine": 46,
+          "endLine": 51,
+          "params": [
+            "duration",
+            "repeatDelay"
+          ]
+        },
+        {
+          "name": "Student",
+          "startLine": 58,
+          "endLine": 282,
+          "params": [
+            "{\n  pose,\n  still = false,\n  className,\n}"
+          ]
+        },
+        {
+          "name": "Mug",
+          "startLine": 285,
+          "endLine": 294,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Student",
+          "line": 58,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Student",
+          "callee": "useReducedMotion",
+          "lineNumber": 68
+        },
+        {
+          "caller": "Student",
+          "callee": "useState",
+          "lineNumber": 72
+        },
+        {
+          "caller": "Student",
+          "callee": "useEffect",
+          "lineNumber": 74
+        },
+        {
+          "caller": "Student",
+          "callee": "setTimeout",
+          "lineNumber": 77
+        },
+        {
+          "caller": "Student",
+          "callee": "setCycle",
+          "lineNumber": 77
+        },
+        {
+          "caller": "Student",
+          "callee": "clearTimeout",
+          "lineNumber": 78
+        },
+        {
+          "caller": "Student",
+          "callee": "useState",
+          "lineNumber": 82
+        },
+        {
+          "caller": "Student",
+          "callee": "useEffect",
+          "lineNumber": 83
+        },
+        {
+          "caller": "Student",
+          "callee": "setInterval",
+          "lineNumber": 85
+        },
+        {
+          "caller": "Student",
+          "callee": "setFlip",
+          "lineNumber": 85
+        },
+        {
+          "caller": "Student",
+          "callee": "clearInterval",
+          "lineNumber": 86
+        },
+        {
+          "caller": "Student",
+          "callee": "cn",
+          "lineNumber": 116
+        },
+        {
+          "caller": "Student",
+          "callee": "loop",
+          "lineNumber": 160
+        },
+        {
+          "caller": "Student",
+          "callee": "loop",
+          "lineNumber": 160
+        },
+        {
+          "caller": "Student",
+          "callee": "pivot",
+          "lineNumber": 163
+        },
+        {
+          "caller": "Student",
+          "callee": "pivot",
+          "lineNumber": 165
+        },
+        {
+          "caller": "Student",
+          "callee": "pivot",
+          "lineNumber": 192
+        },
+        {
+          "caller": "Student",
+          "callee": "pivot",
+          "lineNumber": 198
+        },
+        {
+          "caller": "Student",
+          "callee": "loop",
+          "lineNumber": 209
+        },
+        {
+          "caller": "Student",
+          "callee": "loop",
+          "lineNumber": 209
+        },
+        {
+          "caller": "Student",
+          "callee": "pivot",
+          "lineNumber": 242
+        },
+        {
+          "caller": "Student",
+          "callee": "pivot",
+          "lineNumber": 244
+        },
+        {
+          "caller": "Student",
+          "callee": "loop",
+          "lineNumber": 252
+        },
+        {
+          "caller": "Student",
+          "callee": "pivot",
+          "lineNumber": 257
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/study-room/participants.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 85,
+      "functions": [
+        {
+          "name": "Participants",
+          "startLine": 16,
+          "endLine": 89,
+          "params": [
+            "{\n  members,\n  online,\n  meId,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Participants",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Participants",
+          "callee": "[...members].sort",
+          "lineNumber": 26
+        },
+        {
+          "caller": "Participants",
+          "callee": "online.has",
+          "lineNumber": 27
+        },
+        {
+          "caller": "Participants",
+          "callee": "online.has",
+          "lineNumber": 28
+        },
+        {
+          "caller": "Participants",
+          "callee": "b.last_seen_at.localeCompare",
+          "lineNumber": 30
+        },
+        {
+          "caller": "Participants",
+          "callee": "members.filter",
+          "lineNumber": 32
+        },
+        {
+          "caller": "Participants",
+          "callee": "online.has",
+          "lineNumber": 32
+        },
+        {
+          "caller": "Participants",
+          "callee": "sorted.map",
+          "lineNumber": 51
+        },
+        {
+          "caller": "Participants",
+          "callee": "online.get",
+          "lineNumber": 52
+        },
+        {
+          "caller": "Participants",
+          "callee": "cn",
+          "lineNumber": 63
+        },
+        {
+          "caller": "Participants",
+          "callee": "cn",
+          "lineNumber": 68
+        },
+        {
+          "caller": "Participants",
+          "callee": "timeAgo",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/avatars.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 20,
+      "exports": [
+        {
+          "name": "COATS",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "AVATAR_IDS",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

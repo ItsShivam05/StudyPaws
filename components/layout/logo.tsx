@@ -1,0 +1,27 @@
+import { cn } from "@/lib/utils";
+
+export function PawMark({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 32 32" className={cn("size-7", className)} aria-hidden="true">
+      <rect width="32" height="32" rx="10" fill="#A3B18A" />
+      <g fill="#3D322B">
+        <ellipse cx="16" cy="20.5" rx="5.6" ry="4.6" />
+        <ellipse cx="9.2" cy="14.2" rx="2.3" ry="2.8" transform="rotate(-18 9.2 14.2)" />
+        <ellipse cx="13.6" cy="10" rx="2.3" ry="2.9" />
+        <ellipse cx="18.4" cy="10" rx="2.3" ry="2.9" />
+        <ellipse cx="22.8" cy="14.2" rx="2.3" ry="2.8" transform="rotate(18 22.8 14.2)" />
+      </g>
+    </svg>
+  );
+}
+
+export function Logo({ className }: { className?: string }) {
+  return (
+    <span className={cn("inline-flex items-center gap-2.5", className)}>
+      <PawMark />
+      <span className="font-display text-[19px] font-medium tracking-tight text-ink [font-variation-settings:'SOFT'_100]">
+        Study Paws
+      </span>
+    </span>
+  );
+}

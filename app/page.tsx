@@ -1,69 +1,102 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { motion } from "framer-motion";
+import { Users } from "lucide-react";
+import Link from "next/link";
+import { RoomStage } from "@/components/scene/room-stage";
+import { ThemeSoundsButton } from "@/components/scene/theme-sounds-button";
+import { RoomArtButton } from "@/components/scene/room-art-picker";
+import { TimerPanel } from "@/components/timer/timer-panel";
+import { TodayStrip } from "@/components/statistics/today-strip";
+import { FocusMode, enterFocusMode } from "@/components/timer/focus-mode";
+import { useTimerStore } from "@/lib/timer/timer";
+import { useCatMood, useStudyActivity } from "@/hooks/use-cat-mood";
+import { usePreferences } from "@/lib/stores/preferences";
+import { useUiStore } from "@/lib/stores/ui";
+import { quoteOfTheDay } from "@/lib/quotes";
+import { useNow } from "@/hooks/use-now";
+
+function greeting(hour: number) {
+  if (hour < 5) return "Burning the midnight oil";
+  if (hour < 12) return "Good morning";
+  if (hour < 17) return "Good afternoon";
+  if (hour < 22) return "Good evening";
+  return "Late night study";
+}
+
+export default function StudyRoomPage() {
+  const mode = useTimerStore((s) => s.mode);
+  const status = useTimerStore((s) => s.status);
+  const mood = useCatMood(mode, status);
+  const activity = useStudyActivity(mode, status);
+  const catName = usePreferences((p) => p.catName);
+  const showQuote = usePreferences((p) => p.showQuote);
+  const scene = usePreferences((p) => p.scene);
+  const roomArt = usePreferences((p) => p.roomArt);
+  const hydrated = useUiStore((s) => s.hydrated);
+  const now = useNow(60_000);
+  const date = new Date(now);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="mx-auto max-w-6xl px-4 pt-2 sm:px-6 lg:pt-6">
+      <div className="grid items-center gap-x-12 gap-y-6 lg:grid-cols-[minmax(0,1.5fr)_minmax(320px,1fr)]">
+        <div className="flex flex-col gap-5">
+          <motion.div
+            initial={{ opacity: 0, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            className="flex flex-wrap items-end justify-between gap-x-6 gap-y-1 px-1"
           >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <div>
+              <p className="text-sm text-muted" suppressHydrationWarning>
+                {hydrated ? greeting(date.getHours()) : "Welcome back"}
+              </p>
+              <h1 className="font-display text-[clamp(1.6rem,3.2vw,2.2rem)] leading-tight tracking-tight text-ink [font-variation-settings:'SOFT'_100]">
+                {catName} saved you a seat by the window.
+              </h1>
+            </div>
+            <div className="mb-1 flex flex-wrap items-center gap-2">
+            <RoomArtButton />
+            <ThemeSoundsButton theme={roomArt === "classic" ? scene : roomArt} />
+            <Link
+              href="/rooms"
+              className="inline-flex items-center gap-2 rounded-full bg-accent/30 px-4 py-2 text-sm font-medium text-ink transition-colors hover:bg-accent/45"
+            >
+              <Users className="size-4" aria-hidden="true" /> Study with friends
+            </Link>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.985 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            Documentation
-          </a>
+            <RoomStage mood={mood} activity={activity} art />
+          </motion.div>
         </div>
-      </main>
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+          className="py-2 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:pb-16"
+        >
+          <TimerPanel onFocusMode={enterFocusMode} />
+        </motion.div>
+
+        <div className="self-start">
+          <div className="grid gap-4 sm:grid-cols-[1fr_auto] sm:items-center">
+            <TodayStrip />
+            {showQuote ? (
+              <p className="max-w-xs px-3 font-display text-[15px] italic leading-snug text-muted sm:max-w-[15rem] sm:text-right" suppressHydrationWarning>
+                “{quoteOfTheDay(date)}”
+              </p>
+            ) : null}
+          </div>
+        </div>
+      </div>
+      <FocusMode />
     </div>
   );
 }

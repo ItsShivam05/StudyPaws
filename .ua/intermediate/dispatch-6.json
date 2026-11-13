@@ -1,0 +1,16 @@
+{
+  "batchIndex": 6,
+  "totalBatches": 8,
+  "files": [
+    {
+      "path": "supabase/migrations/20261110000000_study_paws.sql",
+      "language": "sql",
+      "sizeLines": 529,
+      "fileCategory": "data"
+    }
+  ],
+  "batchImportData": {
+    "supabase/migrations/20261110000000_study_paws.sql": []
+  },
+  "neighborMap": {}
+}

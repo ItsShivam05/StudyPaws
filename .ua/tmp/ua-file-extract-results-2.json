@@ -1,0 +1,3663 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 18,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 18,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 18,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "app/rooms/[code]/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "RoomPage",
+          "startLine": 9,
+          "endLine": 12,
+          "params": [
+            "{ params }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "metadata",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "RoomPage",
+          "line": 9,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RoomPage",
+          "callee": "code.toUpperCase",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/rooms/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 304,
+      "nonEmptyLines": 286,
+      "functions": [
+        {
+          "name": "RoomsPage",
+          "startLine": 22,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "Header",
+          "startLine": 36,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "Lobby",
+          "startLine": 50,
+          "endLine": 267,
+          "params": []
+        },
+        {
+          "name": "RoomList",
+          "startLine": 276,
+          "endLine": 304,
+          "params": [
+            "{ title, items }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoomsPage",
+          "line": 22,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Lobby",
+          "callee": "useRouter",
+          "lineNumber": 51
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useAuthStore",
+          "lineNumber": 52
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useState",
+          "lineNumber": 54
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useState",
+          "lineNumber": 55
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useState",
+          "lineNumber": 56
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useState",
+          "lineNumber": 57
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useState",
+          "lineNumber": 58
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useState",
+          "lineNumber": 59
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useState",
+          "lineNumber": 60
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useState",
+          "lineNumber": 61
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useState",
+          "lineNumber": 62
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useCallback",
+          "lineNumber": 65
+        },
+        {
+          "caller": "Lobby",
+          "callee": "Promise.all",
+          "lineNumber": 67
+        },
+        {
+          "caller": "Lobby",
+          "callee": "listPublicRooms().catch",
+          "lineNumber": 68
+        },
+        {
+          "caller": "Lobby",
+          "callee": "listPublicRooms",
+          "lineNumber": 68
+        },
+        {
+          "caller": "Lobby",
+          "callee": "listMyRooms(userId).catch",
+          "lineNumber": 69
+        },
+        {
+          "caller": "Lobby",
+          "callee": "listMyRooms",
+          "lineNumber": 69
+        },
+        {
+          "caller": "Lobby",
+          "callee": "Promise.resolve",
+          "lineNumber": 69
+        },
+        {
+          "caller": "loadLists",
+          "callee": "setLoadingLists",
+          "lineNumber": 75
+        },
+        {
+          "caller": "loadLists",
+          "callee": "fetchLists",
+          "lineNumber": 77
+        },
+        {
+          "caller": "loadLists",
+          "callee": "setPublicRooms",
+          "lineNumber": 78
+        },
+        {
+          "caller": "loadLists",
+          "callee": "setMyRooms",
+          "lineNumber": 79
+        },
+        {
+          "caller": "loadLists",
+          "callee": "setLoadingLists",
+          "lineNumber": 81
+        },
+        {
+          "caller": "Lobby",
+          "callee": "useEffect",
+          "lineNumber": 85
+        },
+        {
+          "caller": "Lobby",
+          "callee": "fetchLists().then",
+          "lineNumber": 88
+        },
+        {
+          "caller": "Lobby",
+          "callee": "fetchLists",
+          "lineNumber": 88
+        },
+        {
+          "caller": "Lobby",
+          "callee": "setPublicRooms",
+          "lineNumber": 90
+        },
+        {
+          "caller": "Lobby",
+          "callee": "setMyRooms",
+          "lineNumber": 91
+        },
+        {
+          "caller": "doCreate",
+          "callee": "setCreating",
+          "lineNumber": 99
+        },
+        {
+          "caller": "doCreate",
+          "callee": "createRoom",
+          "lineNumber": 101
+        },
+        {
+          "caller": "doCreate",
+          "callee": "name.trim",
+          "lineNumber": 101
+        },
+        {
+          "caller": "doCreate",
+          "callee": "toast",
+          "lineNumber": 102
+        },
+        {
+          "caller": "doCreate",
+          "callee": "router.push",
+          "lineNumber": 103
+        },
+        {
+          "caller": "doCreate",
+          "callee": "toast.error",
+          "lineNumber": 105
+        },
+        {
+          "caller": "doCreate",
+          "callee": "friendlyError",
+          "lineNumber": 105
+        },
+        {
+          "caller": "doCreate",
+          "callee": "setCreating",
+          "lineNumber": 106
+        },
+        {
+          "caller": "onCreate",
+          "callee": "e.preventDefault",
+          "lineNumber": 111
+        },
+        {
+          "caller": "onCreate",
+          "callee": "doCreate",
+          "lineNumber": 112
+        },
+        {
+          "caller": "onCreate",
+          "callee": "useAuthStore.getState",
+          "lineNumber": 113
+        },
+        {
+          "caller": "onCreate",
+          "callee": "setIdentityFor",
+          "lineNumber": 114
+        },
+        {
+          "caller": "onCreate",
+          "callee": "setCreating",
+          "lineNumber": 116
+        },
+        {
+          "caller": "onCreate",
+          "callee": "auth.ensureIdentity",
+          "lineNumber": 118
+        },
+        {
+          "caller": "onCreate",
+          "callee": "doCreate",
+          "lineNumber": 119
+        },
+        {
+          "caller": "onCreate",
+          "callee": "toast.error",
+          "lineNumber": 121
+        },
+        {
+          "caller": "onCreate",
+          "callee": "friendlyError",
+          "lineNumber": 121
+        },
+        {
+          "caller": "onCreate",
+          "callee": "setCreating",
+          "lineNumber": 122
+        },
+        {
+          "caller": "onJoin",
+          "callee": "e.preventDefault",
+          "lineNumber": 127
+        },
+        {
+          "caller": "onJoin",
+          "callee": "normalizeCode",
+          "lineNumber": 128
+        },
+        {
+          "caller": "onJoin",
+          "callee": "ROOM_CODE_RE.test",
+          "lineNumber": 129
+        },
+        {
+          "caller": "onJoin",
+          "callee": "setCodeError",
+          "lineNumber": 130
+        },
+        {
+          "caller": "onJoin",
+          "callee": "setCodeError",
+          "lineNumber": 133
+        },
+        {
+          "caller": "onJoin",
+          "callee": "router.push",
+          "lineNumber": 134
+        },
+        {
+          "caller": "Lobby",
+          "callee": "setName",
+          "lineNumber": 162
+        },
+        {
+          "caller": "Lobby",
+          "callee": "setIsPublic",
+          "lineNumber": 170
+        },
+        {
+          "caller": "Lobby",
+          "callee": "setCode",
+          "lineNumber": 202
+        },
+        {
+          "caller": "Lobby",
+          "callee": "myRooms.map",
+          "lineNumber": 219
+        },
+        {
+          "caller": "Lobby",
+          "callee": "timeAgo",
+          "lineNumber": 223
+        },
+        {
+          "caller": "Lobby",
+          "callee": "loadLists",
+          "lineNumber": 231
+        },
+        {
+          "caller": "Lobby",
+          "callee": "cn",
+          "lineNumber": 232
+        },
+        {
+          "caller": "Lobby",
+          "callee": "publicRooms.map",
+          "lineNumber": 243
+        },
+        {
+          "caller": "Lobby",
+          "callee": "timeAgo",
+          "lineNumber": 247
+        },
+        {
+          "caller": "Lobby",
+          "callee": "setIdentityFor",
+          "lineNumber": 258
+        },
+        {
+          "caller": "Lobby",
+          "callee": "setIdentityFor",
+          "lineNumber": 261
+        },
+        {
+          "caller": "Lobby",
+          "callee": "doCreate",
+          "lineNumber": 262
+        },
+        {
+          "caller": "RoomList",
+          "callee": "items.map",
+          "lineNumber": 281
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "app/settings/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 240,
+      "nonEmptyLines": 225,
+      "functions": [
+        {
+          "name": "Section",
+          "startLine": 19,
+          "endLine": 29,
+          "params": [
+            "{ id, title, description, children }"
+          ]
+        },
+        {
+          "name": "Row",
+          "startLine": 31,
+          "endLine": 41,
+          "params": [
+            "{ label, hint, children }"
+          ]
+        },
+        {
+          "name": "SettingsPage",
+          "startLine": 43,
+          "endLine": 159,
+          "params": []
+        },
+        {
+          "name": "CompanionSettings",
+          "startLine": 161,
+          "endLine": 187,
+          "params": [
+            "{\r\n  name,\r\n  coat,\r\n  onChange,\r\n}"
+          ]
+        },
+        {
+          "name": "YouSettings",
+          "startLine": 190,
+          "endLine": 240,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SettingsPage",
+          "line": 43,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SettingsPage",
+          "callee": "usePreferences",
+          "lineNumber": 44
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "useUiStore",
+          "lineNumber": 45
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "useAuthStore",
+          "lineNumber": 46
+        },
+        {
+          "caller": "toggleNotifications",
+          "callee": "p.set",
+          "lineNumber": 50
+        },
+        {
+          "caller": "toggleNotifications",
+          "callee": "toast.error",
+          "lineNumber": 54
+        },
+        {
+          "caller": "toggleNotifications",
+          "callee": "Notification.requestPermission",
+          "lineNumber": 57
+        },
+        {
+          "caller": "toggleNotifications",
+          "callee": "p.set",
+          "lineNumber": 59
+        },
+        {
+          "caller": "toggleNotifications",
+          "callee": "toast",
+          "lineNumber": 60
+        },
+        {
+          "caller": "toggleNotifications",
+          "callee": "toast.error",
+          "lineNumber": 62
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "cn",
+          "lineNumber": 67
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 76
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 79
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 82
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 85
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 87
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 88
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 92
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 95
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "playChime",
+          "lineNumber": 96
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "toggleNotifications",
+          "lineNumber": 103
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 120
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 130
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 132
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 135
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 141
+        },
+        {
+          "caller": "SettingsPage",
+          "callee": "p.set",
+          "lineNumber": 148
+        },
+        {
+          "caller": "CompanionSettings",
+          "callee": "useState",
+          "lineNumber": 170
+        },
+        {
+          "caller": "CompanionSettings",
+          "callee": "setDraft",
+          "lineNumber": 177
+        },
+        {
+          "caller": "CompanionSettings",
+          "callee": "draft.trim",
+          "lineNumber": 178
+        },
+        {
+          "caller": "CompanionSettings",
+          "callee": "onChange",
+          "lineNumber": 178
+        },
+        {
+          "caller": "CompanionSettings",
+          "callee": "setDraft",
+          "lineNumber": 178
+        },
+        {
+          "caller": "CompanionSettings",
+          "callee": "(e.target as HTMLInputElement).blur",
+          "lineNumber": 179
+        },
+        {
+          "caller": "CompanionSettings",
+          "callee": "onChange",
+          "lineNumber": 183
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "useAuthStore",
+          "lineNumber": 191
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "useAuthStore",
+          "lineNumber": 192
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "myAvatar",
+          "lineNumber": 192
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "useState",
+          "lineNumber": 193
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "useState",
+          "lineNumber": 194
+        },
+        {
+          "caller": "save",
+          "callee": "setSaving",
+          "lineNumber": 197
+        },
+        {
+          "caller": "save",
+          "callee": "auth.updateProfile",
+          "lineNumber": 199
+        },
+        {
+          "caller": "save",
+          "callee": "toast",
+          "lineNumber": 200
+        },
+        {
+          "caller": "save",
+          "callee": "toast.error",
+          "lineNumber": 202
+        },
+        {
+          "caller": "save",
+          "callee": "friendlyError",
+          "lineNumber": 202
+        },
+        {
+          "caller": "save",
+          "callee": "setSaving",
+          "lineNumber": 204
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "e.preventDefault",
+          "lineNumber": 213
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "name.trim",
+          "lineNumber": 214
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "save",
+          "lineNumber": 214
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "setName",
+          "lineNumber": 223
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "name.trim",
+          "lineNumber": 226
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "name.trim",
+          "lineNumber": 226
+        },
+        {
+          "caller": "YouSettings",
+          "callee": "save",
+          "lineNumber": 232
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 1,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/scene/scene-picker.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 48,
+      "functions": [
+        {
+          "name": "ScenePicker",
+          "startLine": 22,
+          "endLine": 53,
+          "params": [
+            "{ value, onChange }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SCENE_LABELS",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "ScenePicker",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ScenePicker",
+          "callee": "SCENES.map",
+          "lineNumber": 25
+        },
+        {
+          "caller": "ScenePicker",
+          "callee": "onChange",
+          "lineNumber": 31
+        },
+        {
+          "caller": "ScenePicker",
+          "callee": "cn",
+          "lineNumber": 32
+        },
+        {
+          "caller": "ScenePicker",
+          "callee": "cn",
+          "lineNumber": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/study-room/activity-feed.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 151,
+      "nonEmptyLines": 140,
+      "functions": [
+        {
+          "name": "throttled",
+          "startLine": 16,
+          "endLine": 21,
+          "params": [
+            "last"
+          ]
+        },
+        {
+          "name": "clock",
+          "startLine": 23,
+          "endLine": 25,
+          "params": [
+            "iso"
+          ]
+        },
+        {
+          "name": "ActivityFeed",
+          "startLine": 27,
+          "endLine": 151,
+          "params": [
+            "{\r\n  roomId,\r\n  meId,\r\n  messages,\r\n  names,\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ActivityFeed",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "throttled",
+          "callee": "Date.now",
+          "lineNumber": 17
+        },
+        {
+          "caller": "clock",
+          "callee": "new Date(iso).toLocaleTimeString",
+          "lineNumber": 24
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "useState",
+          "lineNumber": 38
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "useState",
+          "lineNumber": 39
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "useRef",
+          "lineNumber": 40
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "useRef",
+          "lineNumber": 41
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "useEffect",
+          "lineNumber": 43
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "el.scrollTo",
+          "lineNumber": 45
+        },
+        {
+          "caller": "send",
+          "callee": "body.trim",
+          "lineNumber": 49
+        },
+        {
+          "caller": "send",
+          "callee": "throttled",
+          "lineNumber": 50
+        },
+        {
+          "caller": "send",
+          "callee": "toast",
+          "lineNumber": 51
+        },
+        {
+          "caller": "send",
+          "callee": "setSending",
+          "lineNumber": 54
+        },
+        {
+          "caller": "send",
+          "callee": "postMessage",
+          "lineNumber": 56
+        },
+        {
+          "caller": "send",
+          "callee": "setText",
+          "lineNumber": 57
+        },
+        {
+          "caller": "send",
+          "callee": "toast.error",
+          "lineNumber": 59
+        },
+        {
+          "caller": "send",
+          "callee": "friendlyError",
+          "lineNumber": 59
+        },
+        {
+          "caller": "send",
+          "callee": "setSending",
+          "lineNumber": 61
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "messages.map",
+          "lineNumber": 80
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "names.get",
+          "lineNumber": 82
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "clock",
+          "lineNumber": 86
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "cn",
+          "lineNumber": 91
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "clock",
+          "lineNumber": 93
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "cn",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "REACTIONS.map",
+          "lineNumber": 113
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "send",
+          "lineNumber": 118
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "e.preventDefault",
+          "lineNumber": 129
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "send",
+          "lineNumber": 130
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "setText",
+          "lineNumber": 140
+        },
+        {
+          "caller": "ActivityFeed",
+          "callee": "text.trim",
+          "lineNumber": 145
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/study-room/identity-dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 92,
+      "functions": [
+        {
+          "name": "AvatarPicker",
+          "startLine": 14,
+          "endLine": 36,
+          "params": [
+            "{ value, onChange }"
+          ]
+        },
+        {
+          "name": "IdentityDialog",
+          "startLine": 39,
+          "endLine": 97,
+          "params": [
+            "{\r\n  open,\r\n  onClose,\r\n  onReady,\r\n  actionLabel = \"Continue\",\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AvatarPicker",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "IdentityDialog",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AvatarPicker",
+          "callee": "AVATAR_IDS.map",
+          "lineNumber": 17
+        },
+        {
+          "caller": "AvatarPicker",
+          "callee": "onChange",
+          "lineNumber": 25
+        },
+        {
+          "caller": "AvatarPicker",
+          "callee": "cn",
+          "lineNumber": 26
+        },
+        {
+          "caller": "IdentityDialog",
+          "callee": "useAuthStore",
+          "lineNumber": 50
+        },
+        {
+          "caller": "IdentityDialog",
+          "callee": "useState",
+          "lineNumber": 51
+        },
+        {
+          "caller": "IdentityDialog",
+          "callee": "useState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "IdentityDialog",
+          "callee": "useState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "submit",
+          "callee": "e.preventDefault",
+          "lineNumber": 56
+        },
+        {
+          "caller": "submit",
+          "callee": "name.trim",
+          "lineNumber": 57
+        },
+        {
+          "caller": "submit",
+          "callee": "setError",
+          "lineNumber": 58
+        },
+        {
+          "caller": "submit",
+          "callee": "setBusy",
+          "lineNumber": 61
+        },
+        {
+          "caller": "submit",
+          "callee": "setError",
+          "lineNumber": 62
+        },
+        {
+          "caller": "submit",
+          "callee": "auth.ensureIdentity",
+          "lineNumber": 64
+        },
+        {
+          "caller": "submit",
+          "callee": "onReady",
+          "lineNumber": 65
+        },
+        {
+          "caller": "submit",
+          "callee": "setError",
+          "lineNumber": 67
+        },
+        {
+          "caller": "submit",
+          "callee": "friendlyError",
+          "lineNumber": 67
+        },
+        {
+          "caller": "submit",
+          "callee": "setBusy",
+          "lineNumber": 69
+        },
+        {
+          "caller": "IdentityDialog",
+          "callee": "setName",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/study-room/room-header.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 123,
+      "nonEmptyLines": 115,
+      "functions": [
+        {
+          "name": "RoomHeader",
+          "startLine": 14,
+          "endLine": 123,
+          "params": [
+            "{ room, meId, onLeft }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoomHeader",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RoomHeader",
+          "callee": "useState",
+          "lineNumber": 15
+        },
+        {
+          "caller": "RoomHeader",
+          "callee": "useState",
+          "lineNumber": 16
+        },
+        {
+          "caller": "RoomHeader",
+          "callee": "useState",
+          "lineNumber": 17
+        },
+        {
+          "caller": "RoomHeader",
+          "callee": "useState",
+          "lineNumber": 18
+        },
+        {
+          "caller": "copy",
+          "callee": "inviteUrl",
+          "lineNumber": 22
+        },
+        {
+          "caller": "copy",
+          "callee": "window.matchMedia",
+          "lineNumber": 24
+        },
+        {
+          "caller": "copy",
+          "callee": "navigator.share",
+          "lineNumber": 25
+        },
+        {
+          "caller": "copy",
+          "callee": "navigator.clipboard.writeText",
+          "lineNumber": 28
+        },
+        {
+          "caller": "copy",
+          "callee": "setCopied",
+          "lineNumber": 29
+        },
+        {
+          "caller": "copy",
+          "callee": "toast",
+          "lineNumber": 30
+        },
+        {
+          "caller": "copy",
+          "callee": "setTimeout",
+          "lineNumber": 31
+        },
+        {
+          "caller": "copy",
+          "callee": "setCopied",
+          "lineNumber": 31
+        },
+        {
+          "caller": "copy",
+          "callee": "toast",
+          "lineNumber": 34
+        },
+        {
+          "caller": "leave",
+          "callee": "setLeaving",
+          "lineNumber": 39
+        },
+        {
+          "caller": "leave",
+          "callee": "leaveRoom",
+          "lineNumber": 41
+        },
+        {
+          "caller": "leave",
+          "callee": "toast",
+          "lineNumber": 42
+        },
+        {
+          "caller": "leave",
+          "callee": "onLeft",
+          "lineNumber": 43
+        },
+        {
+          "caller": "leave",
+          "callee": "toast.error",
+          "lineNumber": 45
+        },
+        {
+          "caller": "leave",
+          "callee": "friendlyError",
+          "lineNumber": 45
+        },
+        {
+          "caller": "leave",
+          "callee": "setLeaving",
+          "lineNumber": 46
+        },
+        {
+          "caller": "RoomHeader",
+          "callee": "navigator.clipboard.writeText",
+          "lineNumber": 82
+        },
+        {
+          "caller": "RoomHeader",
+          "callee": "toast",
+          "lineNumber": 83
+        },
+        {
+          "caller": "RoomHeader",
+          "callee": "toast",
+          "lineNumber": 85
+        },
+        {
+          "caller": "RoomHeader",
+          "callee": "setSettingsOpen",
+          "lineNumber": 91
+        },
+        {
+          "caller": "RoomHeader",
+          "callee": "setConfirmLeave",
+          "lineNumber": 95
+        },
+        {
+          "caller": "RoomHeader",
+          "callee": "setSettingsOpen",
+          "lineNumber": 100
+        },
+        {
+          "caller": "RoomHeader",
+          "callee": "setConfirmLeave",
+          "lineNumber": 104
+        },
+        {
+          "caller": "RoomHeader",
+          "callee": "setConfirmLeave",
+          "lineNumber": 113
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/study-room/room-settings-dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 152,
+      "nonEmptyLines": 146,
+      "functions": [
+        {
+          "name": "RoomSettingsDialog",
+          "startLine": 14,
+          "endLine": 152,
+          "params": [
+            "{\r\n  room,\r\n  open,\r\n  onClose,\r\n  onDeleted,\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoomSettingsDialog",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "useState",
+          "lineNumber": 25
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "useState",
+          "lineNumber": 26
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "useState",
+          "lineNumber": 27
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "useState",
+          "lineNumber": 28
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "useState",
+          "lineNumber": 29
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "useState",
+          "lineNumber": 30
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "useState",
+          "lineNumber": 31
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "useState",
+          "lineNumber": 32
+        },
+        {
+          "caller": "save",
+          "callee": "name.trim",
+          "lineNumber": 35
+        },
+        {
+          "caller": "save",
+          "callee": "toast.error",
+          "lineNumber": 36
+        },
+        {
+          "caller": "save",
+          "callee": "setSaving",
+          "lineNumber": 39
+        },
+        {
+          "caller": "save",
+          "callee": "updateRoomSettings",
+          "lineNumber": 41
+        },
+        {
+          "caller": "save",
+          "callee": "name.trim().slice",
+          "lineNumber": 42
+        },
+        {
+          "caller": "save",
+          "callee": "name.trim",
+          "lineNumber": 42
+        },
+        {
+          "caller": "save",
+          "callee": "toast",
+          "lineNumber": 49
+        },
+        {
+          "caller": "save",
+          "callee": "onClose",
+          "lineNumber": 50
+        },
+        {
+          "caller": "save",
+          "callee": "toast.error",
+          "lineNumber": 52
+        },
+        {
+          "caller": "save",
+          "callee": "friendlyError",
+          "lineNumber": 52
+        },
+        {
+          "caller": "save",
+          "callee": "setSaving",
+          "lineNumber": 54
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "Object.fromEntries",
+          "lineNumber": 59
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "Object.entries(effectiveLevels(useAmbienceStore.getState())).filter(([, v]) => (v ?? 0) > 0).map",
+          "lineNumber": 60
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "Object.entries(effectiveLevels(useAmbienceStore.getState())).filter",
+          "lineNumber": 60
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "Object.entries",
+          "lineNumber": 60
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "effectiveLevels",
+          "lineNumber": 60
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "useAmbienceStore.getState",
+          "lineNumber": 60
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "Math.round",
+          "lineNumber": 60
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "updateRoomSettings",
+          "lineNumber": 63
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "toast",
+          "lineNumber": 64
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "Object.keys",
+          "lineNumber": 64
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "Object.keys",
+          "lineNumber": 65
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "toast.error",
+          "lineNumber": 68
+        },
+        {
+          "caller": "shareSounds",
+          "callee": "friendlyError",
+          "lineNumber": 68
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "setName",
+          "lineNumber": 75
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "[\r\n            [\"Focus\", focus, setFocus, 1, 180],\r\n            [\"Short break\", short, setShort, 1, 60],\r\n            [\"Long break\", long, setLong, 1, 90],\r\n          ].map",
+          "lineNumber": 89
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "deleteRoom",
+          "lineNumber": 124
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "toast",
+          "lineNumber": 125
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "onClose",
+          "lineNumber": 126
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "onDeleted",
+          "lineNumber": 127
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "toast.error",
+          "lineNumber": 129
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "friendlyError",
+          "lineNumber": 129
+        },
+        {
+          "caller": "RoomSettingsDialog",
+          "callee": "setConfirmDelete",
+          "lineNumber": 136
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/study-room/room-view.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 223,
+      "nonEmptyLines": 203,
+      "functions": [
+        {
+          "name": "RoomView",
+          "startLine": 29,
+          "endLine": 39,
+          "params": [
+            "{ code }"
+          ]
+        },
+        {
+          "name": "RoomProblem",
+          "startLine": 41,
+          "endLine": 51,
+          "params": [
+            "{ title, body }"
+          ]
+        },
+        {
+          "name": "LiveRoom",
+          "startLine": 53,
+          "endLine": 223,
+          "params": [
+            "{ code }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoomView",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RoomView",
+          "callee": "ROOM_CODE_RE.test",
+          "lineNumber": 37
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useRouter",
+          "lineNumber": 54
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useStudyRoom",
+          "lineNumber": 55
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useNow",
+          "lineNumber": 56
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useTimerStore",
+          "lineNumber": 57
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useEffect",
+          "lineNumber": 61
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "tick",
+          "lineNumber": 62
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useAuthStore",
+          "lineNumber": 66
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useRef",
+          "lineNumber": 67
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useState",
+          "lineNumber": 68
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useEffect",
+          "lineNumber": 69
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "auth.ensureIdentity(knownName).catch",
+          "lineNumber": 72
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "auth.ensureIdentity",
+          "lineNumber": 72
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "toast.error",
+          "lineNumber": 73
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "friendlyError",
+          "lineNumber": 73
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "setAutoFailed",
+          "lineNumber": 74
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useCatMood",
+          "lineNumber": 79
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useStudyActivity",
+          "lineNumber": 80
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useMemo",
+          "lineNumber": 82
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "map.set",
+          "lineNumber": 84
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "map.set",
+          "lineNumber": 85
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "useMemo",
+          "lineNumber": 89
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "r.presence\r\n        .filter((p) => p.user_id !== r.me?.id)\r\n        .map",
+          "lineNumber": 91
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "r.presence\r\n        .filter",
+          "lineNumber": 91
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "router.push",
+          "lineNumber": 112
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "roomRemaining",
+          "lineNumber": 133
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "Object.values(room.ambience ?? {}).some",
+          "lineNumber": 134
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "Object.values",
+          "lineNumber": 134
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "router.push",
+          "lineNumber": 138
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "timer.pause",
+          "lineNumber": 150
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "r.floaters.map",
+          "lineNumber": 165
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "cn",
+          "lineNumber": 173
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "names.get",
+          "lineNumber": 178
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "r.setAway",
+          "lineNumber": 190
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "cn",
+          "lineNumber": 192
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "applyMix",
+          "lineNumber": 204
+        },
+        {
+          "caller": "LiveRoom",
+          "callee": "toast",
+          "lineNumber": 205
+        }
+      ],
+      "metrics": {
+        "importCount": 19,
+        "exportCount": 1,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/study-room/setup-notice.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "SetupNotice",
+          "startLine": 4,
+          "endLine": 20,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SetupNotice",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 77,
+      "exports": [
+        {
+          "name": "Button",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "IconButton",
+          "line": 61,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/ui/dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 72,
+      "nonEmptyLines": 68,
+      "functions": [
+        {
+          "name": "Dialog",
+          "startLine": 12,
+          "endLine": 72,
+          "params": [
+            "{\n  open,\n  onClose,\n  title,\n  description,\n  children,\n  className,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Dialog",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Dialog",
+          "callee": "useRef",
+          "lineNumber": 27
+        },
+        {
+          "caller": "Dialog",
+          "callee": "useEffect",
+          "lineNumber": 29
+        },
+        {
+          "caller": "Dialog",
+          "callee": "d.showModal",
+          "lineNumber": 32
+        },
+        {
+          "caller": "Dialog",
+          "callee": "d.close",
+          "lineNumber": 33
+        },
+        {
+          "caller": "Dialog",
+          "callee": "e.preventDefault",
+          "lineNumber": 41
+        },
+        {
+          "caller": "Dialog",
+          "callee": "onClose",
+          "lineNumber": 42
+        },
+        {
+          "caller": "Dialog",
+          "callee": "onClose",
+          "lineNumber": 45
+        },
+        {
+          "caller": "Dialog",
+          "callee": "cn",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "components/ui/spinner.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 34,
+      "functions": [
+        {
+          "name": "Spinner",
+          "startLine": 3,
+          "endLine": 10,
+          "params": [
+            "{ className }"
+          ]
+        },
+        {
+          "name": "PawLoader",
+          "startLine": 13,
+          "endLine": 36,
+          "params": [
+            "{ label = \"Loading…\" }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Spinner",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "PawLoader",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Spinner",
+          "callee": "cn",
+          "lineNumber": 5
+        },
+        {
+          "caller": "PawLoader",
+          "callee": "[0, 1, 2].map",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "hooks/use-study-room.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 336,
+      "nonEmptyLines": 312,
+      "functions": [
+        {
+          "name": "roomRemaining",
+          "startLine": 29,
+          "endLine": 34,
+          "params": [
+            "room",
+            "now",
+            "offset"
+          ]
+        },
+        {
+          "name": "useStudyRoom",
+          "startLine": 43,
+          "endLine": 336,
+          "params": [
+            "code"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "roomRemaining",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "useStudyRoom",
+          "line": 43,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "roomRemaining",
+          "callee": "Math.min",
+          "lineNumber": 31
+        },
+        {
+          "caller": "roomRemaining",
+          "callee": "Math.max",
+          "lineNumber": 31
+        },
+        {
+          "caller": "roomRemaining",
+          "callee": "new Date(room.timer_ends_at).getTime",
+          "lineNumber": 31
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useAuthStore",
+          "lineNumber": 44
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useAuthStore",
+          "lineNumber": 46
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useAuthStore",
+          "lineNumber": 47
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useAuthStore",
+          "lineNumber": 48
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "myAvatar",
+          "lineNumber": 48
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useState",
+          "lineNumber": 51
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useCallback",
+          "lineNumber": 57
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setJoin",
+          "lineNumber": 58
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useState",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useState",
+          "lineNumber": 62
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useState",
+          "lineNumber": 63
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useState",
+          "lineNumber": 64
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useState",
+          "lineNumber": 65
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useState",
+          "lineNumber": 66
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useState",
+          "lineNumber": 67
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useRef",
+          "lineNumber": 69
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useRef",
+          "lineNumber": 70
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useRef",
+          "lineNumber": 71
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useRef",
+          "lineNumber": 72
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useRef",
+          "lineNumber": 74
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useCallback",
+          "lineNumber": 76
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "Date.now",
+          "lineNumber": 81
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useStatsStore.getState().add",
+          "lineNumber": 82
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useStatsStore.getState",
+          "lineNumber": 82
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "new Date(f.startedAt ?? end - f.ms).toISOString",
+          "lineNumber": 83
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "new Date(end).toISOString",
+          "lineNumber": 84
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "Math.round",
+          "lineNumber": 85
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useCallback",
+          "lineNumber": 94
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "new Date(prev.timer_ends_at).getTime",
+          "lineNumber": 105
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "Date.now",
+          "lineNumber": 105
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "recordFocus",
+          "lineNumber": 106
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "usePreferences.getState",
+          "lineNumber": 108
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useUiStore.getState().celebrate",
+          "lineNumber": 109
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useUiStore.getState",
+          "lineNumber": 109
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "playChime",
+          "lineNumber": 110
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "usePreferences.getState",
+          "lineNumber": 118
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "playChime",
+          "lineNumber": 119
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setRoom",
+          "lineNumber": 123
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useCallback",
+          "lineNumber": 128
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setMembers",
+          "lineNumber": 130
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "fetchMembers",
+          "lineNumber": 130
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useEffect",
+          "lineNumber": 137
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "getSupabase",
+          "lineNumber": 138
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "(async () => {\r\n      try {\r\n        const joined = await joinRoom(code);\r\n        if (cancelled) return;\r\n        roomRef.current = null;\r\n        applyRoom(joined);\r\n        const [off, mem, msgs] = await Promise.all([\r\n          measureClockOffset(),\r\n          fetchMembers(joined.id),\r\n          fetchMessages(joined.id),\r\n        ]);\r\n        if (cancelled) return;\r\n        offsetRef.current = off;\r\n        setOffset(off);\r\n        setMembers(mem);\r\n        setMessages(msgs);\r\n\r\n        const channel = sb.channel(`room:${joined.id}`, { config: { presence: { key: userId } } });\r\n        channelRef.current = channel;\r\n\r\n        channel\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"UPDATE\", schema: \"public\", table: \"study_rooms\", filter: `id=eq.${joined.id}` },\r\n            (payload) => applyRoom(payload.new as StudyRoom),\r\n          )\r\n          .on(\"postgres_changes\", { event: \"DELETE\", schema: \"public\", table: \"study_rooms\" }, (payload) => {\r\n            if ((payload.old as { id?: string }).id === joined.id) setStatus(\"closed\");\r\n          })\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"INSERT\", schema: \"public\", table: \"room_messages\", filter: `room_id=eq.${joined.id}` },\r\n            (payload) => {\r\n              const m = payload.new as RoomMessage;\r\n              setMessages((list) => (list.some((x) => x.id === m.id) ? list : [...list.slice(-119), m]));\r\n              if (m.kind !== \"event\") {\r\n                setFloaters((f) => [...f.slice(-3), m]);\r\n                setTimeout(() => setFloaters((f) => f.filter((x) => x.id !== m.id)), 4200);\r\n              }\r\n            },\r\n          )\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"INSERT\", schema: \"public\", table: \"room_members\", filter: `room_id=eq.${joined.id}` },\r\n            () => void refreshMembers(joined.id),\r\n          )\r\n          .on(\"postgres_changes\", { event: \"DELETE\", schema: \"public\", table: \"room_members\" }, (payload) => {\r\n            const old = payload.old as { room_id?: string; user_id?: string };\r\n            if (old.room_id && old.room_id !== joined.id) return;\r\n            if (old.user_id === userId) setStatus(\"closed\");\r\n            else void refreshMembers(joined.id);\r\n          })\r\n          .on(\"presence\", { event: \"sync\" }, () => {\r\n            const state = channel.presenceState<PresenceState>();\r\n            const list = Object.values(state)\r\n              .map((entries) => entries[entries.length - 1])\r\n              .filter(Boolean) as PresenceState[];\r\n            setPresence(list);\r\n          })\r\n          .subscribe(async (s) => {\r\n            if (s === \"SUBSCRIBED\") {\r\n              // (Re)connected: catch up on anything we missed while offline.\r\n              const [fresh, msgs2] = await Promise.all([fetchRoom(joined.id), fetchMessages(joined.id)]);\r\n              if (cancelled) return;\r\n              if (!fresh) {\r\n                setStatus(\"closed\");\r\n                return;\r\n              }\r\n              applyRoom(fresh);\r\n              setMessages(msgs2);\r\n              void refreshMembers(joined.id);\r\n              setStatus(\"ready\");\r\n            } else if (s === \"CHANNEL_ERROR\" || s === \"TIMED_OUT\") {\r\n              toast(\"Reconnecting to the room…\", { id: \"room-reconnect\" });\r\n            }\r\n          });\r\n\r\n        heartbeat = setInterval(() => void touchMembership(joined.id, userId), 120_000);\r\n      } catch (e) {\r\n        if (cancelled) return;\r\n        setStatus(\"error\", friendlyError(e));\r\n      }\r\n    })",
+          "lineNumber": 144
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "joinRoom",
+          "lineNumber": 146
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "applyRoom",
+          "lineNumber": 149
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "Promise.all",
+          "lineNumber": 150
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "measureClockOffset",
+          "lineNumber": 151
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "fetchMembers",
+          "lineNumber": 152
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "fetchMessages",
+          "lineNumber": 153
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setOffset",
+          "lineNumber": 157
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setMembers",
+          "lineNumber": 158
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setMessages",
+          "lineNumber": 159
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "sb.channel",
+          "lineNumber": 161
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "channel\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"UPDATE\", schema: \"public\", table: \"study_rooms\", filter: `id=eq.${joined.id}` },\r\n            (payload) => applyRoom(payload.new as StudyRoom),\r\n          )\r\n          .on(\"postgres_changes\", { event: \"DELETE\", schema: \"public\", table: \"study_rooms\" }, (payload) => {\r\n            if ((payload.old as { id?: string }).id === joined.id) setStatus(\"closed\");\r\n          })\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"INSERT\", schema: \"public\", table: \"room_messages\", filter: `room_id=eq.${joined.id}` },\r\n            (payload) => {\r\n              const m = payload.new as RoomMessage;\r\n              setMessages((list) => (list.some((x) => x.id === m.id) ? list : [...list.slice(-119), m]));\r\n              if (m.kind !== \"event\") {\r\n                setFloaters((f) => [...f.slice(-3), m]);\r\n                setTimeout(() => setFloaters((f) => f.filter((x) => x.id !== m.id)), 4200);\r\n              }\r\n            },\r\n          )\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"INSERT\", schema: \"public\", table: \"room_members\", filter: `room_id=eq.${joined.id}` },\r\n            () => void refreshMembers(joined.id),\r\n          )\r\n          .on(\"postgres_changes\", { event: \"DELETE\", schema: \"public\", table: \"room_members\" }, (payload) => {\r\n            const old = payload.old as { room_id?: string; user_id?: string };\r\n            if (old.room_id && old.room_id !== joined.id) return;\r\n            if (old.user_id === userId) setStatus(\"closed\");\r\n            else void refreshMembers(joined.id);\r\n          })\r\n          .on(\"presence\", { event: \"sync\" }, () => {\r\n            const state = channel.presenceState<PresenceState>();\r\n            const list = Object.values(state)\r\n              .map((entries) => entries[entries.length - 1])\r\n              .filter(Boolean) as PresenceState[];\r\n            setPresence(list);\r\n          })\r\n          .subscribe",
+          "lineNumber": 164
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "channel\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"UPDATE\", schema: \"public\", table: \"study_rooms\", filter: `id=eq.${joined.id}` },\r\n            (payload) => applyRoom(payload.new as StudyRoom),\r\n          )\r\n          .on(\"postgres_changes\", { event: \"DELETE\", schema: \"public\", table: \"study_rooms\" }, (payload) => {\r\n            if ((payload.old as { id?: string }).id === joined.id) setStatus(\"closed\");\r\n          })\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"INSERT\", schema: \"public\", table: \"room_messages\", filter: `room_id=eq.${joined.id}` },\r\n            (payload) => {\r\n              const m = payload.new as RoomMessage;\r\n              setMessages((list) => (list.some((x) => x.id === m.id) ? list : [...list.slice(-119), m]));\r\n              if (m.kind !== \"event\") {\r\n                setFloaters((f) => [...f.slice(-3), m]);\r\n                setTimeout(() => setFloaters((f) => f.filter((x) => x.id !== m.id)), 4200);\r\n              }\r\n            },\r\n          )\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"INSERT\", schema: \"public\", table: \"room_members\", filter: `room_id=eq.${joined.id}` },\r\n            () => void refreshMembers(joined.id),\r\n          )\r\n          .on(\"postgres_changes\", { event: \"DELETE\", schema: \"public\", table: \"room_members\" }, (payload) => {\r\n            const old = payload.old as { room_id?: string; user_id?: string };\r\n            if (old.room_id && old.room_id !== joined.id) return;\r\n            if (old.user_id === userId) setStatus(\"closed\");\r\n            else void refreshMembers(joined.id);\r\n          })\r\n          .on",
+          "lineNumber": 164
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "channel\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"UPDATE\", schema: \"public\", table: \"study_rooms\", filter: `id=eq.${joined.id}` },\r\n            (payload) => applyRoom(payload.new as StudyRoom),\r\n          )\r\n          .on(\"postgres_changes\", { event: \"DELETE\", schema: \"public\", table: \"study_rooms\" }, (payload) => {\r\n            if ((payload.old as { id?: string }).id === joined.id) setStatus(\"closed\");\r\n          })\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"INSERT\", schema: \"public\", table: \"room_messages\", filter: `room_id=eq.${joined.id}` },\r\n            (payload) => {\r\n              const m = payload.new as RoomMessage;\r\n              setMessages((list) => (list.some((x) => x.id === m.id) ? list : [...list.slice(-119), m]));\r\n              if (m.kind !== \"event\") {\r\n                setFloaters((f) => [...f.slice(-3), m]);\r\n                setTimeout(() => setFloaters((f) => f.filter((x) => x.id !== m.id)), 4200);\r\n              }\r\n            },\r\n          )\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"INSERT\", schema: \"public\", table: \"room_members\", filter: `room_id=eq.${joined.id}` },\r\n            () => void refreshMembers(joined.id),\r\n          )\r\n          .on",
+          "lineNumber": 164
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "channel\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"UPDATE\", schema: \"public\", table: \"study_rooms\", filter: `id=eq.${joined.id}` },\r\n            (payload) => applyRoom(payload.new as StudyRoom),\r\n          )\r\n          .on(\"postgres_changes\", { event: \"DELETE\", schema: \"public\", table: \"study_rooms\" }, (payload) => {\r\n            if ((payload.old as { id?: string }).id === joined.id) setStatus(\"closed\");\r\n          })\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"INSERT\", schema: \"public\", table: \"room_messages\", filter: `room_id=eq.${joined.id}` },\r\n            (payload) => {\r\n              const m = payload.new as RoomMessage;\r\n              setMessages((list) => (list.some((x) => x.id === m.id) ? list : [...list.slice(-119), m]));\r\n              if (m.kind !== \"event\") {\r\n                setFloaters((f) => [...f.slice(-3), m]);\r\n                setTimeout(() => setFloaters((f) => f.filter((x) => x.id !== m.id)), 4200);\r\n              }\r\n            },\r\n          )\r\n          .on",
+          "lineNumber": 164
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "channel\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"UPDATE\", schema: \"public\", table: \"study_rooms\", filter: `id=eq.${joined.id}` },\r\n            (payload) => applyRoom(payload.new as StudyRoom),\r\n          )\r\n          .on(\"postgres_changes\", { event: \"DELETE\", schema: \"public\", table: \"study_rooms\" }, (payload) => {\r\n            if ((payload.old as { id?: string }).id === joined.id) setStatus(\"closed\");\r\n          })\r\n          .on",
+          "lineNumber": 164
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "channel\r\n          .on(\r\n            \"postgres_changes\",\r\n            { event: \"UPDATE\", schema: \"public\", table: \"study_rooms\", filter: `id=eq.${joined.id}` },\r\n            (payload) => applyRoom(payload.new as StudyRoom),\r\n          )\r\n          .on",
+          "lineNumber": 164
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "channel\r\n          .on",
+          "lineNumber": 164
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "applyRoom",
+          "lineNumber": 168
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setStatus",
+          "lineNumber": 171
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setMessages",
+          "lineNumber": 178
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "list.some",
+          "lineNumber": 178
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "list.slice",
+          "lineNumber": 178
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setFloaters",
+          "lineNumber": 180
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "f.slice",
+          "lineNumber": 180
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setTimeout",
+          "lineNumber": 181
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setFloaters",
+          "lineNumber": 181
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "f.filter",
+          "lineNumber": 181
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "refreshMembers",
+          "lineNumber": 188
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setStatus",
+          "lineNumber": 193
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "refreshMembers",
+          "lineNumber": 194
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "channel.presenceState",
+          "lineNumber": 197
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "Object.values(state)\r\n              .map((entries) => entries[entries.length - 1])\r\n              .filter",
+          "lineNumber": 198
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "Object.values(state)\r\n              .map",
+          "lineNumber": 198
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "Object.values",
+          "lineNumber": 198
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setPresence",
+          "lineNumber": 201
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "Promise.all",
+          "lineNumber": 206
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "fetchRoom",
+          "lineNumber": 206
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "fetchMessages",
+          "lineNumber": 206
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setStatus",
+          "lineNumber": 209
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "applyRoom",
+          "lineNumber": 212
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setMessages",
+          "lineNumber": 213
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "refreshMembers",
+          "lineNumber": 214
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setStatus",
+          "lineNumber": 215
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "toast",
+          "lineNumber": 217
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setInterval",
+          "lineNumber": 221
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "touchMembership",
+          "lineNumber": 221
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "setStatus",
+          "lineNumber": 224
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "friendlyError",
+          "lineNumber": 224
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "clearInterval",
+          "lineNumber": 230
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "recordFocus",
+          "lineNumber": 233
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "touchMembership(r.id, userId).catch",
+          "lineNumber": 234
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "touchMembership",
+          "lineNumber": 234
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "sb.removeChannel",
+          "lineNumber": 237
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "getSupabase",
+          "lineNumber": 244
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "getSupabase",
+          "lineNumber": 253
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useMemo",
+          "lineNumber": 260
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useEffect",
+          "lineNumber": 266
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "ch.track",
+          "lineNumber": 269
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "new Date().toISOString",
+          "lineNumber": 274
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useCallback",
+          "lineNumber": 279
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "Math.min",
+          "lineNumber": 285
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "roomRemaining",
+          "lineNumber": 291
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "roomTimer(r.id, \"complete\")\r\n            .then(applyRoom)\r\n            .catch",
+          "lineNumber": 294
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "roomTimer(r.id, \"complete\")\r\n            .then",
+          "lineNumber": 294
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "roomTimer",
+          "lineNumber": 294
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useCallback",
+          "lineNumber": 305
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "applyRoom",
+          "lineNumber": 310
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "roomTimer",
+          "lineNumber": 310
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "toast.error",
+          "lineNumber": 312
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "friendlyError",
+          "lineNumber": 312
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "useMemo",
+          "lineNumber": 318
+        },
+        {
+          "caller": "useStudyRoom",
+          "callee": "presence.map",
+          "lineNumber": 318
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/rooms.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 151,
+      "nonEmptyLines": 130,
+      "functions": [
+        {
+          "name": "normalizeCode",
+          "startLine": 8,
+          "endLine": 13,
+          "params": [
+            "input"
+          ]
+        },
+        {
+          "name": "inviteUrl",
+          "startLine": 15,
+          "endLine": 17,
+          "params": [
+            "code"
+          ]
+        },
+        {
+          "name": "sb",
+          "startLine": 19,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "createRoom",
+          "startLine": 25,
+          "endLine": 31,
+          "params": [
+            "name",
+            "isPublic",
+            "scene"
+          ]
+        },
+        {
+          "name": "joinRoom",
+          "startLine": 33,
+          "endLine": 37,
+          "params": [
+            "code"
+          ]
+        },
+        {
+          "name": "leaveRoom",
+          "startLine": 39,
+          "endLine": 42,
+          "params": [
+            "roomId"
+          ]
+        },
+        {
+          "name": "deleteRoom",
+          "startLine": 44,
+          "endLine": 47,
+          "params": [
+            "roomId"
+          ]
+        },
+        {
+          "name": "roomTimer",
+          "startLine": 51,
+          "endLine": 57,
+          "params": [
+            "roomId",
+            "action",
+            "mode"
+          ]
+        },
+        {
+          "name": "updateRoomSettings",
+          "startLine": 59,
+          "endLine": 69,
+          "params": [
+            "roomId",
+            "patch"
+          ]
+        },
+        {
+          "name": "fetchRoom",
+          "startLine": 71,
+          "endLine": 75,
+          "params": [
+            "roomId"
+          ]
+        },
+        {
+          "name": "fetchMembers",
+          "startLine": 77,
+          "endLine": 91,
+          "params": [
+            "roomId"
+          ]
+        },
+        {
+          "name": "fetchMessages",
+          "startLine": 93,
+          "endLine": 102,
+          "params": [
+            "roomId",
+            "limit"
+          ]
+        },
+        {
+          "name": "postMessage",
+          "startLine": 104,
+          "endLine": 109,
+          "params": [
+            "roomId",
+            "userId",
+            "kind",
+            "body"
+          ]
+        },
+        {
+          "name": "touchMembership",
+          "startLine": 111,
+          "endLine": 113,
+          "params": [
+            "roomId",
+            "userId"
+          ]
+        },
+        {
+          "name": "listPublicRooms",
+          "startLine": 115,
+          "endLine": 119,
+          "params": []
+        },
+        {
+          "name": "listMyRooms",
+          "startLine": 126,
+          "endLine": 136,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "measureClockOffset",
+          "startLine": 139,
+          "endLine": 151,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ROOM_CODE_RE",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeCode",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "inviteUrl",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "createRoom",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "joinRoom",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "leaveRoom",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "deleteRoom",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "roomTimer",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "updateRoomSettings",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "fetchRoom",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "fetchMembers",
+          "line": 77,
+          "isDefault": false
+        },
+        {
+          "name": "fetchMessages",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "postMessage",
+          "line": 104,
+          "isDefault": false
+        },
+        {
+          "name": "touchMembership",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "listPublicRooms",
+          "line": 115,
+          "isDefault": false
+        },
+        {
+          "name": "listMyRooms",
+          "line": 126,
+          "isDefault": false
+        },
+        {
+          "name": "measureClockOffset",
+          "line": 139,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeCode",
+          "callee": "input.match",
+          "lineNumber": 10
+        },
+        {
+          "caller": "normalizeCode",
+          "callee": "raw.replace(/[^A-Za-z0-9]/g, \"\").toUpperCase().slice",
+          "lineNumber": 12
+        },
+        {
+          "caller": "normalizeCode",
+          "callee": "raw.replace(/[^A-Za-z0-9]/g, \"\").toUpperCase",
+          "lineNumber": 12
+        },
+        {
+          "caller": "normalizeCode",
+          "callee": "raw.replace",
+          "lineNumber": 12
+        },
+        {
+          "caller": "sb",
+          "callee": "getSupabase",
+          "lineNumber": 20
+        },
+        {
+          "caller": "createRoom",
+          "callee": "sb()\n    .rpc(\"create_room\", { p_name: name.trim(), p_is_public: isPublic, p_scene: scene })\n    .single",
+          "lineNumber": 26
+        },
+        {
+          "caller": "createRoom",
+          "callee": "sb()\n    .rpc",
+          "lineNumber": 26
+        },
+        {
+          "caller": "createRoom",
+          "callee": "sb",
+          "lineNumber": 26
+        },
+        {
+          "caller": "createRoom",
+          "callee": "name.trim",
+          "lineNumber": 27
+        },
+        {
+          "caller": "joinRoom",
+          "callee": "sb().rpc(\"join_room\", { p_code: code }).single",
+          "lineNumber": 34
+        },
+        {
+          "caller": "joinRoom",
+          "callee": "sb().rpc",
+          "lineNumber": 34
+        },
+        {
+          "caller": "joinRoom",
+          "callee": "sb",
+          "lineNumber": 34
+        },
+        {
+          "caller": "leaveRoom",
+          "callee": "sb().rpc",
+          "lineNumber": 40
+        },
+        {
+          "caller": "leaveRoom",
+          "callee": "sb",
+          "lineNumber": 40
+        },
+        {
+          "caller": "deleteRoom",
+          "callee": "sb().from(\"study_rooms\").delete().eq",
+          "lineNumber": 45
+        },
+        {
+          "caller": "deleteRoom",
+          "callee": "sb().from(\"study_rooms\").delete",
+          "lineNumber": 45
+        },
+        {
+          "caller": "deleteRoom",
+          "callee": "sb().from",
+          "lineNumber": 45
+        },
+        {
+          "caller": "deleteRoom",
+          "callee": "sb",
+          "lineNumber": 45
+        },
+        {
+          "caller": "roomTimer",
+          "callee": "sb()\n    .rpc(\"room_timer\", { p_room: roomId, p_action: action, p_mode: mode ?? null })\n    .single",
+          "lineNumber": 52
+        },
+        {
+          "caller": "roomTimer",
+          "callee": "sb()\n    .rpc",
+          "lineNumber": 52
+        },
+        {
+          "caller": "roomTimer",
+          "callee": "sb",
+          "lineNumber": 52
+        },
+        {
+          "caller": "updateRoomSettings",
+          "callee": "sb().from(\"study_rooms\").update(patch).eq",
+          "lineNumber": 67
+        },
+        {
+          "caller": "updateRoomSettings",
+          "callee": "sb().from(\"study_rooms\").update",
+          "lineNumber": 67
+        },
+        {
+          "caller": "updateRoomSettings",
+          "callee": "sb().from",
+          "lineNumber": 67
+        },
+        {
+          "caller": "updateRoomSettings",
+          "callee": "sb",
+          "lineNumber": 67
+        },
+        {
+          "caller": "fetchRoom",
+          "callee": "sb().from(\"study_rooms\").select(\"*\").eq(\"id\", roomId).maybeSingle",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchRoom",
+          "callee": "sb().from(\"study_rooms\").select(\"*\").eq",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchRoom",
+          "callee": "sb().from(\"study_rooms\").select",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchRoom",
+          "callee": "sb().from",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchRoom",
+          "callee": "sb",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "sb",
+          "lineNumber": 78
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "client\n    .from(\"room_members\")\n    .select(\"room_id, user_id, role, joined_at, last_seen_at\")\n    .eq(\"room_id\", roomId)\n    .order",
+          "lineNumber": 79
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "client\n    .from(\"room_members\")\n    .select(\"room_id, user_id, role, joined_at, last_seen_at\")\n    .eq",
+          "lineNumber": 79
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "client\n    .from(\"room_members\")\n    .select",
+          "lineNumber": 79
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "client\n    .from",
+          "lineNumber": 79
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "(data ?? []).map",
+          "lineNumber": 85
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "client.from(\"profiles\").select(\"id, display_name, avatar\").in",
+          "lineNumber": 87
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "client.from(\"profiles\").select",
+          "lineNumber": 87
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "client.from",
+          "lineNumber": 87
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "(profiles ?? []).map",
+          "lineNumber": 89
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "(data ?? []).map",
+          "lineNumber": 90
+        },
+        {
+          "caller": "fetchMembers",
+          "callee": "byId.get",
+          "lineNumber": 90
+        },
+        {
+          "caller": "fetchMessages",
+          "callee": "sb()\n    .from(\"room_messages\")\n    .select(\"id, room_id, user_id, kind, body, created_at\")\n    .eq(\"room_id\", roomId)\n    .order(\"created_at\", { ascending: false })\n    .limit",
+          "lineNumber": 94
+        },
+        {
+          "caller": "fetchMessages",
+          "callee": "sb()\n    .from(\"room_messages\")\n    .select(\"id, room_id, user_id, kind, body, created_at\")\n    .eq(\"room_id\", roomId)\n    .order",
+          "lineNumber": 94
+        },
+        {
+          "caller": "fetchMessages",
+          "callee": "sb()\n    .from(\"room_messages\")\n    .select(\"id, room_id, user_id, kind, body, created_at\")\n    .eq",
+          "lineNumber": 94
+        },
+        {
+          "caller": "fetchMessages",
+          "callee": "sb()\n    .from(\"room_messages\")\n    .select",
+          "lineNumber": 94
+        },
+        {
+          "caller": "fetchMessages",
+          "callee": "sb()\n    .from",
+          "lineNumber": 94
+        },
+        {
+          "caller": "fetchMessages",
+          "callee": "sb",
+          "lineNumber": 94
+        },
+        {
+          "caller": "fetchMessages",
+          "callee": "((data ?? []) as RoomMessage[]).reverse",
+          "lineNumber": 101
+        },
+        {
+          "caller": "postMessage",
+          "callee": "body.trim().slice",
+          "lineNumber": 105
+        },
+        {
+          "caller": "postMessage",
+          "callee": "body.trim",
+          "lineNumber": 105
+        },
+        {
+          "caller": "postMessage",
+          "callee": "sb().from(\"room_messages\").insert",
+          "lineNumber": 107
+        },
+        {
+          "caller": "postMessage",
+          "callee": "sb().from",
+          "lineNumber": 107
+        },
+        {
+          "caller": "postMessage",
+          "callee": "sb",
+          "lineNumber": 107
+        },
+        {
+          "caller": "touchMembership",
+          "callee": "sb().from(\"room_members\").update({ last_seen_at: new Date().toISOString() }).eq(\"room_id\", roomId).eq",
+          "lineNumber": 112
+        },
+        {
+          "caller": "touchMembership",
+          "callee": "sb().from(\"room_members\").update({ last_seen_at: new Date().toISOString() }).eq",
+          "lineNumber": 112
+        },
+        {
+          "caller": "touchMembership",
+          "callee": "sb().from(\"room_members\").update",
+          "lineNumber": 112
+        },
+        {
+          "caller": "touchMembership",
+          "callee": "sb().from",
+          "lineNumber": 112
+        },
+        {
+          "caller": "touchMembership",
+          "callee": "sb",
+          "lineNumber": 112
+        },
+        {
+          "caller": "touchMembership",
+          "callee": "new Date().toISOString",
+          "lineNumber": 112
+        },
+        {
+          "caller": "listPublicRooms",
+          "callee": "sb().rpc",
+          "lineNumber": 116
+        },
+        {
+          "caller": "listPublicRooms",
+          "callee": "sb",
+          "lineNumber": 116
+        },
+        {
+          "caller": "listMyRooms",
+          "callee": "sb()\n    .from(\"room_members\")\n    .select(\"role, study_rooms(id, code, name, is_public, scene, last_active_at)\")\n    .eq",
+          "lineNumber": 127
+        },
+        {
+          "caller": "listMyRooms",
+          "callee": "sb()\n    .from(\"room_members\")\n    .select",
+          "lineNumber": 127
+        },
+        {
+          "caller": "listMyRooms",
+          "callee": "sb()\n    .from",
+          "lineNumber": 127
+        },
+        {
+          "caller": "listMyRooms",
+          "callee": "sb",
+          "lineNumber": 127
+        },
+        {
+          "caller": "listMyRooms",
+          "callee": "((data ?? []) as unknown as { role: MyRoom[\"role\"]; study_rooms: MyRoom[\"room\"] | null }[])\n    .filter((r) => r.study_rooms)\n    .map((r) => ({ role: r.role, room: r.study_rooms! }))\n    .sort",
+          "lineNumber": 132
+        },
+        {
+          "caller": "listMyRooms",
+          "callee": "((data ?? []) as unknown as { role: MyRoom[\"role\"]; study_rooms: MyRoom[\"room\"] | null }[])\n    .filter((r) => r.study_rooms)\n    .map",
+          "lineNumber": 132
+        },
+        {
+          "caller": "listMyRooms",
+          "callee": "((data ?? []) as unknown as { role: MyRoom[\"role\"]; study_rooms: MyRoom[\"room\"] | null }[])\n    .filter",
+          "lineNumber": 132
+        },
+        {
+          "caller": "listMyRooms",
+          "callee": "b.room.last_active_at.localeCompare",
+          "lineNumber": 135
+        },
+        {
+          "caller": "measureClockOffset",
+          "callee": "sb",
+          "lineNumber": 140
+        },
+        {
+          "caller": "measureClockOffset",
+          "callee": "Date.now",
+          "lineNumber": 143
+        },
+        {
+          "caller": "measureClockOffset",
+          "callee": "client.rpc",
+          "lineNumber": 144
+        },
+        {
+          "caller": "measureClockOffset",
+          "callee": "Date.now",
+          "lineNumber": 145
+        },
+        {
+          "caller": "measureClockOffset",
+          "callee": "samples.push",
+          "lineNumber": 147
+        },
+        {
+          "caller": "measureClockOffset",
+          "callee": "new Date(data as string).getTime",
+          "lineNumber": 147
+        },
+        {
+          "caller": "measureClockOffset",
+          "callee": "samples.reduce",
+          "lineNumber": 150
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 17,
+        "functionCount": 17,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/supabase/auth.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 155,
+      "nonEmptyLines": 139,
+      "functions": [
+        {
+          "name": "toAuthUser",
+          "startLine": 53,
+          "endLine": 55,
+          "params": [
+            "u"
+          ]
+        },
+        {
+          "name": "cleanName",
+          "startLine": 57,
+          "endLine": 59,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "validAvatar",
+          "startLine": 61,
+          "endLine": 63,
+          "params": [
+            "a"
+          ]
+        },
+        {
+          "name": "myAvatar",
+          "startLine": 66,
+          "endLine": 68,
+          "params": [
+            "s"
+          ]
+        },
+        {
+          "name": "loadProfile",
+          "startLine": 70,
+          "endLine": 81,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "startAuth",
+          "startLine": 86,
+          "endLine": 105,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useAuthStore",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "cleanName",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "myAvatar",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "loadProfile",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "startAuth",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "auth",
+          "line": 107,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "cleanName",
+          "callee": "name.replace(/\\s+/g, \" \").trim().slice",
+          "lineNumber": 58
+        },
+        {
+          "caller": "cleanName",
+          "callee": "name.replace(/\\s+/g, \" \").trim",
+          "lineNumber": 58
+        },
+        {
+          "caller": "cleanName",
+          "callee": "name.replace",
+          "lineNumber": 58
+        },
+        {
+          "caller": "validAvatar",
+          "callee": "(AVATAR_IDS as string[]).includes",
+          "lineNumber": 62
+        },
+        {
+          "caller": "loadProfile",
+          "callee": "getSupabase",
+          "lineNumber": 71
+        },
+        {
+          "caller": "loadProfile",
+          "callee": "sb.from(\"profiles\").select(\"id, display_name, avatar\").eq(\"id\", userId).maybeSingle",
+          "lineNumber": 73
+        },
+        {
+          "caller": "loadProfile",
+          "callee": "sb.from(\"profiles\").select(\"id, display_name, avatar\").eq",
+          "lineNumber": 73
+        },
+        {
+          "caller": "loadProfile",
+          "callee": "sb.from(\"profiles\").select",
+          "lineNumber": 73
+        },
+        {
+          "caller": "loadProfile",
+          "callee": "sb.from",
+          "lineNumber": 73
+        },
+        {
+          "caller": "loadProfile",
+          "callee": "validAvatar",
+          "lineNumber": 74
+        },
+        {
+          "caller": "loadProfile",
+          "callee": "useAuthStore.getState",
+          "lineNumber": 75
+        },
+        {
+          "caller": "loadProfile",
+          "callee": "useAuthStore.setState",
+          "lineNumber": 76
+        },
+        {
+          "caller": "startAuth",
+          "callee": "getSupabase",
+          "lineNumber": 89
+        },
+        {
+          "caller": "startAuth",
+          "callee": "useAuthStore.setState",
+          "lineNumber": 91
+        },
+        {
+          "caller": "startAuth",
+          "callee": "sb.auth.onAuthStateChange",
+          "lineNumber": 94
+        },
+        {
+          "caller": "startAuth",
+          "callee": "toAuthUser",
+          "lineNumber": 95
+        },
+        {
+          "caller": "startAuth",
+          "callee": "useAuthStore.getState",
+          "lineNumber": 96
+        },
+        {
+          "caller": "startAuth",
+          "callee": "useAuthStore.setState",
+          "lineNumber": 97
+        },
+        {
+          "caller": "startAuth",
+          "callee": "useAuthStore.getState",
+          "lineNumber": 100
+        },
+        {
+          "caller": "startAuth",
+          "callee": "setTimeout",
+          "lineNumber": 103
+        },
+        {
+          "caller": "startAuth",
+          "callee": "loadProfile",
+          "lineNumber": 103
+        },
+        {
+          "caller": "ensureIdentity",
+          "callee": "getSupabase",
+          "lineNumber": 113
+        },
+        {
+          "caller": "ensureIdentity",
+          "callee": "cleanName",
+          "lineNumber": 115
+        },
+        {
+          "caller": "ensureIdentity",
+          "callee": "useAuthStore.getState",
+          "lineNumber": 116
+        },
+        {
+          "caller": "ensureIdentity",
+          "callee": "useAuthStore.setState",
+          "lineNumber": 117
+        },
+        {
+          "caller": "ensureIdentity",
+          "callee": "useAuthStore.getState",
+          "lineNumber": 119
+        },
+        {
+          "caller": "ensureIdentity",
+          "callee": "useAuthStore.getState",
+          "lineNumber": 121
+        },
+        {
+          "caller": "ensureIdentity",
+          "callee": "auth.updateProfile",
+          "lineNumber": 123
+        },
+        {
+          "caller": "ensureIdentity",
+          "callee": "sb.auth.signInAnonymously",
+          "lineNumber": 127
+        },
+        {
+          "caller": "ensureIdentity",
+          "callee": "toAuthUser",
+          "lineNumber": 132
+        },
+        {
+          "caller": "ensureIdentity",
+          "callee": "useAuthStore.setState",
+          "lineNumber": 133
+        },
+        {
+          "caller": "ensureIdentity",
+          "callee": "loadProfile",
+          "lineNumber": 134
+        },
+        {
+          "caller": "updateProfile",
+          "callee": "cleanName",
+          "lineNumber": 141
+        },
+        {
+          "caller": "updateProfile",
+          "callee": "validAvatar",
+          "lineNumber": 142
+        },
+        {
+          "caller": "updateProfile",
+          "callee": "useAuthStore.setState",
+          "lineNumber": 143
+        },
+        {
+          "caller": "updateProfile",
+          "callee": "getSupabase",
+          "lineNumber": 148
+        },
+        {
+          "caller": "updateProfile",
+          "callee": "useAuthStore.getState",
+          "lineNumber": 149
+        },
+        {
+          "caller": "updateProfile",
+          "callee": "sb.from(\"profiles\").update(clean).eq",
+          "lineNumber": 151
+        },
+        {
+          "caller": "updateProfile",
+          "callee": "sb.from(\"profiles\").update",
+          "lineNumber": 151
+        },
+        {
+          "caller": "updateProfile",
+          "callee": "sb.from",
+          "lineNumber": 151
+        },
+        {
+          "caller": "updateProfile",
+          "callee": "loadProfile",
+          "lineNumber": 153
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/supabase/client.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "getSupabase",
+          "startLine": 10,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "friendlyError",
+          "startLine": 17,
+          "endLine": 31,
+          "params": [
+            "err",
+            "fallback"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getSupabase",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "friendlyError",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSupabase",
+          "callee": "createBrowserClient",
+          "lineNumber": 12
+        },
+        {
+          "caller": "friendlyError",
+          "callee": "msg.includes",
+          "lineNumber": 20
+        },
+        {
+          "caller": "friendlyError",
+          "callee": "msg.includes",
+          "lineNumber": 21
+        },
+        {
+          "caller": "friendlyError",
+          "callee": "msg.includes",
+          "lineNumber": 22
+        },
+        {
+          "caller": "friendlyError",
+          "callee": "msg.includes",
+          "lineNumber": 23
+        },
+        {
+          "caller": "friendlyError",
+          "callee": "msg.includes",
+          "lineNumber": 24
+        },
+        {
+          "caller": "friendlyError",
+          "callee": "msg.includes",
+          "lineNumber": 25
+        },
+        {
+          "caller": "friendlyError",
+          "callee": "msg.includes",
+          "lineNumber": 26
+        },
+        {
+          "caller": "friendlyError",
+          "callee": "msg.includes",
+          "lineNumber": 28
+        },
+        {
+          "caller": "friendlyError",
+          "callee": "msg.includes",
+          "lineNumber": 29
+        },
+        {
+          "caller": "friendlyError",
+          "callee": "msg.includes",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "lib/supabase/config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "exports": [
+        {
+          "name": "SUPABASE_URL",
+          "line": 5,
+          "isDefault": false
+        },
+        {
+          "name": "SUPABASE_KEY",
+          "line": 6,
+          "isDefault": false
+        },
+        {
+          "name": "isSupabaseConfigured",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}
