@@ -67,7 +67,7 @@ export const DEFAULT_PREFERENCES: Preferences = {
   catCoat: "ginger",
   showQuote: true,
   lowMotion: false,
-  showBuddy: true,
+  showBuddy: false,
   roomArt: "rainy-night",
 };
 

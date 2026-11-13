@@ -74,6 +74,20 @@ export const usePreferences = create<PreferencesState>()(
       set: (patch) => set({ ...sanitizePreferences(patch), updatedAt: Date.now() }),
       replace: (prefs, updatedAt) => set({ ...sanitizePreferences(prefs), updatedAt }),
     }),
-    { name: "sp-preferences", version: 1, skipHydration: true },
+    {
+      name: "sp-preferences",
+      version: 2,
+      skipHydration: true,
+      migrate: (persisted, version) => {
+        const state = (persisted ?? {}) as Partial<PreferencesState>;
+        if (version < 2) {
+          // v2: the study buddy became opt-in (the classic room shows an empty
+          // seat instead). Bumping updatedAt makes this local change win over
+          // an older copy synced to the cloud, and it gets pushed up next sync.
+          return { ...state, showBuddy: false, updatedAt: Date.now() };
+        }
+        return state;
+      },
+    },
   ),
 );

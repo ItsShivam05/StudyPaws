@@ -29,7 +29,7 @@ import { cn } from "@/lib/utils";
 export function RoomView({ code }: { code: string }) {
   if (!isSupabaseConfigured) {
     return (
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <div className="mx-auto max-w-6xl 2xl:max-w-7xl px-4 py-16 sm:px-6">
         <SetupNotice />
       </div>
     );
@@ -104,7 +104,7 @@ function LiveRoom({ code }: { code: string }) {
 
   if (r.status === "waiting-identity") {
     return (
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <div className="mx-auto max-w-6xl 2xl:max-w-7xl px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-md text-center">
           <h1 className="font-display text-3xl">You&apos;re invited to study</h1>
           <p className="mt-2 text-sm text-muted">Tell your friends who you are, and you&apos;ll be at the window in a moment.</p>
@@ -134,7 +134,7 @@ function LiveRoom({ code }: { code: string }) {
   const hasRoomSounds = Object.values(room.ambience ?? {}).some((v) => (v ?? 0) > 0);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-2 sm:px-6 lg:pt-4">
+    <div className="mx-auto max-w-6xl 2xl:max-w-7xl px-4 pt-2 sm:px-6 lg:pt-4">
       <RoomHeader room={room} meId={r.me?.id ?? null} onLeft={() => router.push("/rooms")} />
 
       <AnimatePresence>

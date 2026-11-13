@@ -26,7 +26,7 @@ export default function JournalPage() {
   ];
 
   return (
-    <div className={cn("mx-auto max-w-6xl px-4 py-8 transition-opacity duration-500 sm:px-6 sm:py-10", hydrated ? "opacity-100" : "opacity-0")}>
+    <div className={cn("mx-auto max-w-6xl 2xl:max-w-7xl px-4 py-8 transition-opacity duration-500 sm:px-6 sm:py-10", hydrated ? "opacity-100" : "opacity-0")}>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="font-display text-[clamp(2rem,4vw,2.75rem)] leading-tight tracking-tight [font-variation-settings:'SOFT'_100]">

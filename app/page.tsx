@@ -38,7 +38,10 @@ export default function StudyRoomPage() {
   const date = new Date(now);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-2 sm:px-6 lg:pt-6">
+    // On desktop, centre the content in the space between the nav (4rem) and the
+    // music dock reserve (main's 7rem bottom padding) so tall screens don't leave
+    // one big gap above the player.
+    <div className="mx-auto flex max-w-6xl flex-col justify-center px-4 pt-2 sm:px-6 lg:min-h-[calc(100dvh-11rem)] lg:py-6 2xl:max-w-7xl">
       <div className="grid items-center gap-x-12 gap-y-6 lg:grid-cols-[minmax(0,1.5fr)_minmax(320px,1fr)]">
         <div className="flex flex-col gap-5">
           <motion.div

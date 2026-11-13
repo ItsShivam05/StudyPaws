@@ -70,9 +70,16 @@ export function FocusMode() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="fixed inset-0 z-[45] flex items-center justify-center bg-[var(--scene-wall)]"
+          className="fixed inset-0 z-[45] flex items-center justify-center overflow-hidden bg-[var(--scene-wall)]"
         >
-          <div className="relative w-full max-w-[calc(100dvh*1.6)]">
+          {/*
+            The room is 8:5. Narrow/portrait screens fit the whole picture.
+            On 3:2-and-wider screens it covers the screen like a wallpaper,
+            trimming a little wall/desk at the edges instead of leaving side
+            bars. The width is capped at 1.92× the height so ultra-wide screens
+            never crop more than ~8% top and bottom (every scene's cat stays in view).
+          */}
+          <div className="relative w-full max-w-[calc(100dvh*1.6)] shrink-0 wide-screen:w-[max(160dvh,min(100%,192dvh))] wide-screen:max-w-none">
             <RoomStage mood={mood} activity={activity} rounded={false} art />
           </div>
 

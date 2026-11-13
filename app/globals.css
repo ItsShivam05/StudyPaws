@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
+/* Landscape screens at least as wide as 3:2 (laptops, 16:10, 16:9 monitors). */
+@custom-variant wide-screen (@media (min-aspect-ratio: 3/2));
 
 /* ------------------------------------------------------------------ */
 /*  Design tokens                                                      */

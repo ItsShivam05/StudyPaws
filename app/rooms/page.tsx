@@ -22,7 +22,7 @@ import { cn, timeAgo } from "@/lib/utils";
 export default function RoomsPage() {
   if (!isSupabaseConfigured) {
     return (
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+      <div className="mx-auto max-w-6xl 2xl:max-w-7xl px-4 py-10 sm:px-6">
         <Header />
         <div className="mt-10">
           <SetupNotice />
@@ -135,7 +135,7 @@ function Lobby() {
   };
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
+    <div className="mx-auto max-w-6xl 2xl:max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
       <Header />
 
       <div className="mt-10 grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:gap-14">

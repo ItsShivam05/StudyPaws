@@ -223,6 +223,7 @@ export function RoomStage({
       thunder={thunder}
       animate={!prefs.lowMotion}
       notebook={!buddy}
+      emptySeat={!buddy}
       className={cn(rounded && "rounded-[32px] shadow-float", className)}
     >
       {/* Friends on the windowsill — fixed slots either side of the companion */}

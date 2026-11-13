@@ -28,6 +28,59 @@ function ClockHands() {
   );
 }
 
+const SPINDLES = [162, 184, 206, 228, 250];
+
+/**
+ * The seat Mochi saved for you: a spindle-back chair pulled up to the desk,
+ * seen from behind, with a knitted blanket over one corner. It sits in the
+ * bottom-left foreground (clear of the cat, notebook and windowsill friends).
+ */
+function EmptySeat() {
+  const wood = { fill: "var(--scene-desk-hi)" };
+  return (
+    <g className="parallax-near">
+      {/* soft shadow on the desk front */}
+      <path d="M128 432 Q212 410 300 432 L300 500 L128 500 Z" fill="#000" opacity="0.08" />
+
+      {/* back posts + spindles, each with a shaded right edge */}
+      {[124, 270].map((px) => (
+        <g key={px}>
+          <rect x={px} y="420" width="16" height="80" rx="6" style={wood} />
+          <rect x={px + 10} y="420" width="6" height="80" rx="3" fill="#000" opacity="0.12" />
+        </g>
+      ))}
+      {SPINDLES.map((sx) => (
+        <g key={sx}>
+          <rect x={sx} y="424" width="8" height="76" rx="4" style={wood} />
+          <rect x={sx + 5} y="424" width="3" height="76" rx="1.5" fill="#000" opacity="0.12" />
+        </g>
+      ))}
+
+      {/* curved top rail */}
+      <path d="M112 422 Q206 396 298 422 L298 438 Q206 412 112 438 Z" style={wood} />
+      <path d="M112 434 Q206 408 298 434 L298 438 Q206 412 112 438 Z" fill="#000" opacity="0.12" />
+      <path d="M116 421 Q206 397 294 421" stroke="#FFE2A8" strokeOpacity="0.35" strokeWidth="2" fill="none" strokeLinecap="round" />
+
+      {/* knitted blanket draped over the right corner */}
+      <path
+        d="M214 408 Q256 398 304 418 L312 474 Q306 486 296 482 Q290 494 278 490 Q270 482 262 488 Q250 490 248 476 L240 440 Q228 424 214 422 Z"
+        fill="#C98F6B"
+      />
+      <path d="M214 408 Q256 398 304 418 L306 428 Q258 410 214 418 Z" fill="#000" opacity="0.1" />
+      <path
+        d="M236 432 Q270 422 306 438 M242 452 Q276 442 309 458 M246 470 Q280 462 311 474"
+        stroke="#F1E7D8"
+        strokeOpacity="0.55"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeDasharray="1 6"
+        fill="none"
+      />
+      <path d="M300 420 L310 474" stroke="#A8704F" strokeWidth="3" strokeLinecap="round" opacity="0.6" />
+    </g>
+  );
+}
+
 /**
  * The cozy room, drawn as one responsive SVG (viewBox 800×500). Colours
  * come from CSS variables so light/dark themes switch without re-rendering.
@@ -41,9 +94,12 @@ export function StudyScene({
   lampOn = true,
   animate = true,
   notebook = true,
+  emptySeat = false,
 }: {
   /** false when the student is at the desk with their own notebook */
   notebook?: boolean;
+  /** Draw the empty chair in the foreground ("saved you a seat") when no student is at the desk. */
+  emptySeat?: boolean;
   scene: SceneId;
   thunder?: boolean;
   children?: ReactNode;
@@ -330,6 +386,9 @@ export function StudyScene({
         </g>
 
         </g>
+
+        {/* Your seat, pulled up to the desk — in front of everything on it */}
+        {emptySeat && <EmptySeat />}
 
         {/* Theme light over the room (fireplace glow) */}
         {fade((s) => <RoomFx scene={s} />)}

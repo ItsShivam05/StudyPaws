@@ -25,7 +25,7 @@ export function TopNav() {
 
   return (
     <header className="sticky top-0 z-30 bg-bg/80 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
+      <div className="mx-auto flex h-16 max-w-6xl items-center 2xl:max-w-7xl justify-between gap-3 px-4 sm:px-6">
         <Link href="/" className="rounded-xl" aria-label="Study Paws home">
           <Logo className="[&>span:last-child]:hidden sm:[&>span:last-child]:inline" />
         </Link>
